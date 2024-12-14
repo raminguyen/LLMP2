@@ -1,0 +1,3 @@
+from EXP3fullprogress import run_multiple_experimentsEXP3
+
+run_multiple_experimentsEXP3()

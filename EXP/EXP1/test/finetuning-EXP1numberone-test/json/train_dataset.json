@@ -1,0 +1,632 @@
+[
+    {
+        "id": "38169d40-d813-4a02-bede-d219d1051c06",
+        "image": "images/position_common_scale_38169d40-d813-4a02-bede-d219d1051c06.jpg",
+        "task": "position_common_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 0, Bottom is 60). So the range is 0 - 60. No explanation.",
+        "value": 5.0
+    },
+    {
+        "id": "49cf2ca4-0350-437b-af93-cfc2a86b8d86",
+        "image": "images/position_common_scale_49cf2ca4-0350-437b-af93-cfc2a86b8d86.jpg",
+        "task": "position_common_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 0, Bottom is 60). So the range is 0 - 60. No explanation.",
+        "value": 49.0
+    },
+    {
+        "id": "29b5ea6e-12b2-494d-83b5-1cdecfa51ec5",
+        "image": "images/position_common_scale_29b5ea6e-12b2-494d-83b5-1cdecfa51ec5.jpg",
+        "task": "position_common_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 0, Bottom is 60). So the range is 0 - 60. No explanation.",
+        "value": 24.0
+    },
+    {
+        "id": "95683271-f67e-4d8f-8969-65984586f23d",
+        "image": "images/position_common_scale_95683271-f67e-4d8f-8969-65984586f23d.jpg",
+        "task": "position_common_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 0, Bottom is 60). So the range is 0 - 60. No explanation.",
+        "value": 38.0
+    },
+    {
+        "id": "3b046959-adb2-40ad-9158-fa52a23bdbad",
+        "image": "images/position_common_scale_3b046959-adb2-40ad-9158-fa52a23bdbad.jpg",
+        "task": "position_common_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 0, Bottom is 60). So the range is 0 - 60. No explanation.",
+        "value": 38.0
+    },
+    {
+        "id": "b4e4307d-76cc-4e96-aa89-38e298675aa1",
+        "image": "images/position_common_scale_b4e4307d-76cc-4e96-aa89-38e298675aa1.jpg",
+        "task": "position_common_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 0, Bottom is 60). So the range is 0 - 60. No explanation.",
+        "value": 40.0
+    },
+    {
+        "id": "8c4ba49d-0959-47e2-b993-2473cea25ddd",
+        "image": "images/position_common_scale_8c4ba49d-0959-47e2-b993-2473cea25ddd.jpg",
+        "task": "position_common_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 0, Bottom is 60). So the range is 0 - 60. No explanation.",
+        "value": 4.0
+    },
+    {
+        "id": "4023430b-46e1-4a71-888d-9dc9b3ef6aa4",
+        "image": "images/position_common_scale_4023430b-46e1-4a71-888d-9dc9b3ef6aa4.jpg",
+        "task": "position_common_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 0, Bottom is 60). So the range is 0 - 60. No explanation.",
+        "value": 4.0
+    },
+    {
+        "id": "4e50f354-2c13-4a82-bfb7-62a5b68e482d",
+        "image": "images/position_common_scale_4e50f354-2c13-4a82-bfb7-62a5b68e482d.jpg",
+        "task": "position_common_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 0, Bottom is 60). So the range is 0 - 60. No explanation.",
+        "value": 24.0
+    },
+    {
+        "id": "31ac4188-ce10-4852-a796-ea64884c4194",
+        "image": "images/position_common_scale_31ac4188-ce10-4852-a796-ea64884c4194.jpg",
+        "task": "position_common_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 0, Bottom is 60). So the range is 0 - 60. No explanation.",
+        "value": 46.0
+    },
+    {
+        "id": "e3e378ed-a5d5-4c35-895f-d9ea361365e4",
+        "image": "images/position_non_aligned_scale_e3e378ed-a5d5-4c35-895f-d9ea361365e4.jpg",
+        "task": "position_non_aligned_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 22, Bottom is 40). So the range is 22 - 40. No explanation.",
+        "value": 24.0
+    },
+    {
+        "id": "7e9389ba-1e45-404d-b88a-57d16cf865ae",
+        "image": "images/position_non_aligned_scale_7e9389ba-1e45-404d-b88a-57d16cf865ae.jpg",
+        "task": "position_non_aligned_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 22, Bottom is 40). So the range is 22 - 40. No explanation.",
+        "value": 24.0
+    },
+    {
+        "id": "c692e9e0-c1f7-49e6-ad86-ae7b02e199f0",
+        "image": "images/position_non_aligned_scale_c692e9e0-c1f7-49e6-ad86-ae7b02e199f0.jpg",
+        "task": "position_non_aligned_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 22, Bottom is 40). So the range is 22 - 40. No explanation.",
+        "value": 24.0
+    },
+    {
+        "id": "28040859-716b-48c9-9743-e3deddbbab16",
+        "image": "images/position_non_aligned_scale_28040859-716b-48c9-9743-e3deddbbab16.jpg",
+        "task": "position_non_aligned_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 22, Bottom is 40). So the range is 22 - 40. No explanation.",
+        "value": 27.0
+    },
+    {
+        "id": "29266179-10e9-4516-acd3-cf04dbe31bd8",
+        "image": "images/position_non_aligned_scale_29266179-10e9-4516-acd3-cf04dbe31bd8.jpg",
+        "task": "position_non_aligned_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 22, Bottom is 40). So the range is 22 - 40. No explanation.",
+        "value": 27.0
+    },
+    {
+        "id": "ae3db4dd-3056-4970-ba8b-38d169d8db8d",
+        "image": "images/position_non_aligned_scale_ae3db4dd-3056-4970-ba8b-38d169d8db8d.jpg",
+        "task": "position_non_aligned_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 22, Bottom is 40). So the range is 22 - 40. No explanation.",
+        "value": 31.0
+    },
+    {
+        "id": "544c011c-0a3e-4245-a482-52deddde7bb7",
+        "image": "images/position_non_aligned_scale_544c011c-0a3e-4245-a482-52deddde7bb7.jpg",
+        "task": "position_non_aligned_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 22, Bottom is 40). So the range is 22 - 40. No explanation.",
+        "value": 26.0
+    },
+    {
+        "id": "d7181bb9-cc11-493d-8d98-2d135e9e9ceb",
+        "image": "images/position_non_aligned_scale_d7181bb9-cc11-493d-8d98-2d135e9e9ceb.jpg",
+        "task": "position_non_aligned_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 22, Bottom is 40). So the range is 22 - 40. No explanation.",
+        "value": 28.0
+    },
+    {
+        "id": "31bab3e2-0fa3-4488-8eac-467bb85b65a5",
+        "image": "images/position_non_aligned_scale_31bab3e2-0fa3-4488-8eac-467bb85b65a5.jpg",
+        "task": "position_non_aligned_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 22, Bottom is 40). So the range is 22 - 40. No explanation.",
+        "value": 27.0
+    },
+    {
+        "id": "e2648735-f15d-4f0d-acb9-c2d2233c973f",
+        "image": "images/position_non_aligned_scale_e2648735-f15d-4f0d-acb9-c2d2233c973f.jpg",
+        "task": "position_non_aligned_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 22, Bottom is 40). So the range is 22 - 40. No explanation.",
+        "value": 38.0
+    },
+    {
+        "id": "cb65c463-03ec-4adf-a3e6-4e3f0d9587e5",
+        "image": "images/length_cb65c463-03ec-4adf-a3e6-4e3f0d9587e5.jpg",
+        "task": "length",
+        "question": "Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.",
+        "value": 4.0
+    },
+    {
+        "id": "1732f318-7dc2-4e12-8f1c-7abd885cd7d0",
+        "image": "images/length_1732f318-7dc2-4e12-8f1c-7abd885cd7d0.jpg",
+        "task": "length",
+        "question": "Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.",
+        "value": 60.0
+    },
+    {
+        "id": "116c3112-6bc2-44b9-b95a-f8613c83b9b8",
+        "image": "images/length_116c3112-6bc2-44b9-b95a-f8613c83b9b8.jpg",
+        "task": "length",
+        "question": "Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.",
+        "value": 8.0
+    },
+    {
+        "id": "fc458f3c-e38a-4c97-bce5-2ccdeec8dea0",
+        "image": "images/length_fc458f3c-e38a-4c97-bce5-2ccdeec8dea0.jpg",
+        "task": "length",
+        "question": "Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.",
+        "value": 33.0
+    },
+    {
+        "id": "318ca767-fe05-455b-89bd-86399197e1ca",
+        "image": "images/length_318ca767-fe05-455b-89bd-86399197e1ca.jpg",
+        "task": "length",
+        "question": "Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.",
+        "value": 6.0
+    },
+    {
+        "id": "c1667727-a070-4198-a6fe-986cd20f1284",
+        "image": "images/length_c1667727-a070-4198-a6fe-986cd20f1284.jpg",
+        "task": "length",
+        "question": "Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.",
+        "value": 24.0
+    },
+    {
+        "id": "338f487d-6e89-46db-b497-50dcc7d280bc",
+        "image": "images/length_338f487d-6e89-46db-b497-50dcc7d280bc.jpg",
+        "task": "length",
+        "question": "Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.",
+        "value": 6.0
+    },
+    {
+        "id": "7699328a-5d04-4fe3-bf1f-367aa83baaa8",
+        "image": "images/length_7699328a-5d04-4fe3-bf1f-367aa83baaa8.jpg",
+        "task": "length",
+        "question": "Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.",
+        "value": 20.0
+    },
+    {
+        "id": "07819e2d-55f6-491c-9615-21e272811bd2",
+        "image": "images/length_07819e2d-55f6-491c-9615-21e272811bd2.jpg",
+        "task": "length",
+        "question": "Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.",
+        "value": 56.0
+    },
+    {
+        "id": "ef850efa-2197-4f58-a073-55dbc8a1bf37",
+        "image": "images/length_ef850efa-2197-4f58-a073-55dbc8a1bf37.jpg",
+        "task": "length",
+        "question": "Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.",
+        "value": 33.0
+    },
+    {
+        "id": "f49d1214-78aa-4770-8686-e57b86f725d0",
+        "image": "images/direction_f49d1214-78aa-4770-8686-e57b86f725d0.jpg",
+        "task": "direction",
+        "question": "Please estimate the direction of the line relative to the starting dot in the range 0 - 359 degrees. No explanation.",
+        "value": 55.0
+    },
+    {
+        "id": "f7eb1833-ca0f-4523-a5bf-d43d21a597fa",
+        "image": "images/direction_f7eb1833-ca0f-4523-a5bf-d43d21a597fa.jpg",
+        "task": "direction",
+        "question": "Please estimate the direction of the line relative to the starting dot in the range 0 - 359 degrees. No explanation.",
+        "value": 142.0
+    },
+    {
+        "id": "88eb8c56-9a74-456e-a68e-f4e43ba99e6b",
+        "image": "images/direction_88eb8c56-9a74-456e-a68e-f4e43ba99e6b.jpg",
+        "task": "direction",
+        "question": "Please estimate the direction of the line relative to the starting dot in the range 0 - 359 degrees. No explanation.",
+        "value": 322.0
+    },
+    {
+        "id": "791d3b05-260d-47bb-bf55-e8960ae93539",
+        "image": "images/direction_791d3b05-260d-47bb-bf55-e8960ae93539.jpg",
+        "task": "direction",
+        "question": "Please estimate the direction of the line relative to the starting dot in the range 0 - 359 degrees. No explanation.",
+        "value": 135.0
+    },
+    {
+        "id": "bf19bd9d-7136-4557-9b42-9d724238dfcb",
+        "image": "images/direction_bf19bd9d-7136-4557-9b42-9d724238dfcb.jpg",
+        "task": "direction",
+        "question": "Please estimate the direction of the line relative to the starting dot in the range 0 - 359 degrees. No explanation.",
+        "value": 334.0
+    },
+    {
+        "id": "fae4ac27-90a1-4d6d-8ceb-39f390e18976",
+        "image": "images/direction_fae4ac27-90a1-4d6d-8ceb-39f390e18976.jpg",
+        "task": "direction",
+        "question": "Please estimate the direction of the line relative to the starting dot in the range 0 - 359 degrees. No explanation.",
+        "value": 205.0
+    },
+    {
+        "id": "9bda9926-7483-4ad0-84ae-84291451c5f5",
+        "image": "images/direction_9bda9926-7483-4ad0-84ae-84291451c5f5.jpg",
+        "task": "direction",
+        "question": "Please estimate the direction of the line relative to the starting dot in the range 0 - 359 degrees. No explanation.",
+        "value": 16.0
+    },
+    {
+        "id": "7019aa2a-2218-4814-b05c-2f6b3b294a97",
+        "image": "images/direction_7019aa2a-2218-4814-b05c-2f6b3b294a97.jpg",
+        "task": "direction",
+        "question": "Please estimate the direction of the line relative to the starting dot in the range 0 - 359 degrees. No explanation.",
+        "value": 324.0
+    },
+    {
+        "id": "088337c8-42e6-4d5a-a815-1b761b6b7a9e",
+        "image": "images/direction_088337c8-42e6-4d5a-a815-1b761b6b7a9e.jpg",
+        "task": "direction",
+        "question": "Please estimate the direction of the line relative to the starting dot in the range 0 - 359 degrees. No explanation.",
+        "value": 143.0
+    },
+    {
+        "id": "e400f3e2-7208-4fe7-b4f7-c5cbdec2c7e0",
+        "image": "images/direction_e400f3e2-7208-4fe7-b4f7-c5cbdec2c7e0.jpg",
+        "task": "direction",
+        "question": "Please estimate the direction of the line relative to the starting dot in the range 0 - 359 degrees. No explanation.",
+        "value": 187.0
+    },
+    {
+        "id": "ef2176f9-56d8-467f-9668-193d332d1250",
+        "image": "images/angle_ef2176f9-56d8-467f-9668-193d332d1250.jpg",
+        "task": "angle",
+        "question": "Please estimate the angle (0-90 degrees). No explanation.",
+        "value": 75.0
+    },
+    {
+        "id": "efdff29f-a10a-42b6-9a70-1a59e8f5ce2d",
+        "image": "images/angle_efdff29f-a10a-42b6-9a70-1a59e8f5ce2d.jpg",
+        "task": "angle",
+        "question": "Please estimate the angle (0-90 degrees). No explanation.",
+        "value": 90.0
+    },
+    {
+        "id": "dd5e3d77-4c6a-4775-af4f-80d79a9f4843",
+        "image": "images/angle_dd5e3d77-4c6a-4775-af4f-80d79a9f4843.jpg",
+        "task": "angle",
+        "question": "Please estimate the angle (0-90 degrees). No explanation.",
+        "value": 30.0
+    },
+    {
+        "id": "3c327775-802c-4ae8-b74f-df9f8afcdbc5",
+        "image": "images/angle_3c327775-802c-4ae8-b74f-df9f8afcdbc5.jpg",
+        "task": "angle",
+        "question": "Please estimate the angle (0-90 degrees). No explanation.",
+        "value": 24.0
+    },
+    {
+        "id": "fa0b5554-f302-444e-b97a-296a7f4bcc66",
+        "image": "images/angle_fa0b5554-f302-444e-b97a-296a7f4bcc66.jpg",
+        "task": "angle",
+        "question": "Please estimate the angle (0-90 degrees). No explanation.",
+        "value": 65.0
+    },
+    {
+        "id": "a5febdb3-8820-4cdc-9576-288584eb3512",
+        "image": "images/angle_a5febdb3-8820-4cdc-9576-288584eb3512.jpg",
+        "task": "angle",
+        "question": "Please estimate the angle (0-90 degrees). No explanation.",
+        "value": 80.0
+    },
+    {
+        "id": "f280f76b-541a-4d5a-8da2-71a8ee818486",
+        "image": "images/angle_f280f76b-541a-4d5a-8da2-71a8ee818486.jpg",
+        "task": "angle",
+        "question": "Please estimate the angle (0-90 degrees). No explanation.",
+        "value": 77.0
+    },
+    {
+        "id": "80adbecb-82e0-4375-a2ff-5e2425856dbb",
+        "image": "images/angle_80adbecb-82e0-4375-a2ff-5e2425856dbb.jpg",
+        "task": "angle",
+        "question": "Please estimate the angle (0-90 degrees). No explanation.",
+        "value": 62.0
+    },
+    {
+        "id": "6081b46a-5f55-467f-b31e-a57facd0479c",
+        "image": "images/angle_6081b46a-5f55-467f-b31e-a57facd0479c.jpg",
+        "task": "angle",
+        "question": "Please estimate the angle (0-90 degrees). No explanation.",
+        "value": 43.0
+    },
+    {
+        "id": "64b94c9d-131f-4e82-82f9-a7028c316884",
+        "image": "images/angle_64b94c9d-131f-4e82-82f9-a7028c316884.jpg",
+        "task": "angle",
+        "question": "Please estimate the angle (0-90 degrees). No explanation.",
+        "value": 38.0
+    },
+    {
+        "id": "cc057327-54d6-48d9-85c7-d7ad34a842f0",
+        "image": "images/area_cc057327-54d6-48d9-85c7-d7ad34a842f0.jpg",
+        "task": "area",
+        "question": "Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 3421.194399759285
+    },
+    {
+        "id": "0b8f1a1a-6548-4135-9e3b-89234ebdcf45",
+        "image": "images/area_0b8f1a1a-6548-4135-9e3b-89234ebdcf45.jpg",
+        "task": "area",
+        "question": "Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 78.53981633974483
+    },
+    {
+        "id": "27ffc7e3-6d5e-42ce-b9c3-10f06c8845e2",
+        "image": "images/area_27ffc7e3-6d5e-42ce-b9c3-10f06c8845e2.jpg",
+        "task": "area",
+        "question": "Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 1661.9025137490005
+    },
+    {
+        "id": "5fc1c74a-5228-4ae0-84dd-f373d12fc2b0",
+        "image": "images/area_5fc1c74a-5228-4ae0-84dd-f373d12fc2b0.jpg",
+        "task": "area",
+        "question": "Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 380.1327110843649
+    },
+    {
+        "id": "4199c1fd-8ace-4d8e-8216-9d72f42c0e85",
+        "image": "images/area_4199c1fd-8ace-4d8e-8216-9d72f42c0e85.jpg",
+        "task": "area",
+        "question": "Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 4071.5040790523717
+    },
+    {
+        "id": "f6f6e986-55f2-4652-b294-9c132635f15d",
+        "image": "images/area_f6f6e986-55f2-4652-b294-9c132635f15d.jpg",
+        "task": "area",
+        "question": "Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 4536.459791783661
+    },
+    {
+        "id": "c1a8de74-9387-46c3-b5c6-9db7b6658e5f",
+        "image": "images/area_c1a8de74-9387-46c3-b5c6-9db7b6658e5f.jpg",
+        "task": "area",
+        "question": "Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 3216.990877275948
+    },
+    {
+        "id": "0c6d0876-3777-4fcc-83f2-3130cd34a022",
+        "image": "images/area_0c6d0876-3777-4fcc-83f2-3130cd34a022.jpg",
+        "task": "area",
+        "question": "Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 4300.840342764427
+    },
+    {
+        "id": "8f93d81d-da99-438d-b8ba-7a506943cb61",
+        "image": "images/area_8f93d81d-da99-438d-b8ba-7a506943cb61.jpg",
+        "task": "area",
+        "question": "Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 3421.194399759285
+    },
+    {
+        "id": "f9d47a64-0163-4419-823e-5a55dbb85c1a",
+        "image": "images/area_f9d47a64-0163-4419-823e-5a55dbb85c1a.jpg",
+        "task": "area",
+        "question": "Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 1017.8760197630929
+    },
+    {
+        "id": "eea7acb2-e82b-4f5b-9f08-d28473e8b7b5",
+        "image": "images/volume_eea7acb2-e82b-4f5b-9f08-d28473e8b7b5.jpg",
+        "task": "volume",
+        "question": "Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 64.0
+    },
+    {
+        "id": "d8811e68-9dfa-4108-9355-faba6f4b85c0",
+        "image": "images/volume_d8811e68-9dfa-4108-9355-faba6f4b85c0.jpg",
+        "task": "volume",
+        "question": "Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 64.0
+    },
+    {
+        "id": "cd2aa51d-ae8c-455b-b18f-574e67e94af0",
+        "image": "images/volume_cd2aa51d-ae8c-455b-b18f-574e67e94af0.jpg",
+        "task": "volume",
+        "question": "Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 1331.0
+    },
+    {
+        "id": "3a9de018-8b8d-4876-b04c-33e66a568ef4",
+        "image": "images/volume_3a9de018-8b8d-4876-b04c-33e66a568ef4.jpg",
+        "task": "volume",
+        "question": "Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 1728.0
+    },
+    {
+        "id": "2913bbba-7fdd-45c8-ba5a-aacbd267b15c",
+        "image": "images/volume_2913bbba-7fdd-45c8-ba5a-aacbd267b15c.jpg",
+        "task": "volume",
+        "question": "Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 1728.0
+    },
+    {
+        "id": "36b22e3b-b43a-483a-9cbc-51114ade3ecc",
+        "image": "images/volume_36b22e3b-b43a-483a-9cbc-51114ade3ecc.jpg",
+        "task": "volume",
+        "question": "Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 343.0
+    },
+    {
+        "id": "efc08b0e-2219-4903-a800-7439a352219f",
+        "image": "images/volume_efc08b0e-2219-4903-a800-7439a352219f.jpg",
+        "task": "volume",
+        "question": "Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 343.0
+    },
+    {
+        "id": "f87337dc-b5c7-45dd-9f08-4bf15fc4e69a",
+        "image": "images/volume_f87337dc-b5c7-45dd-9f08-4bf15fc4e69a.jpg",
+        "task": "volume",
+        "question": "Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 512.0
+    },
+    {
+        "id": "d62a4211-8f1c-4f1a-b5f1-865d2258cdee",
+        "image": "images/volume_d62a4211-8f1c-4f1a-b5f1-865d2258cdee.jpg",
+        "task": "volume",
+        "question": "Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 1000.0
+    },
+    {
+        "id": "0f99bc35-00af-4442-b966-b796ff8c6cdc",
+        "image": "images/volume_0f99bc35-00af-4442-b966-b796ff8c6cdc.jpg",
+        "task": "volume",
+        "question": "Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 1000.0
+    },
+    {
+        "id": "69241bb4-801a-4c38-9c96-4660a4527348",
+        "image": "images/curvature_69241bb4-801a-4c38-9c96-4660a4527348.jpg",
+        "task": "curvature",
+        "question": "Please estimate the curvature of the line. (0 is no curvature - 1 is the maximum curvature) The more bend the line is, the higher the curvature. No explanation.",
+        "value": 0.006
+    },
+    {
+        "id": "5bf492b3-fa0c-4e6f-9a41-446d725b4b3e",
+        "image": "images/curvature_5bf492b3-fa0c-4e6f-9a41-446d725b4b3e.jpg",
+        "task": "curvature",
+        "question": "Please estimate the curvature of the line. (0 is no curvature - 1 is the maximum curvature) The more bend the line is, the higher the curvature. No explanation.",
+        "value": 0.046
+    },
+    {
+        "id": "f325f88b-89cb-463e-9aeb-b480dac3a4b3",
+        "image": "images/curvature_f325f88b-89cb-463e-9aeb-b480dac3a4b3.jpg",
+        "task": "curvature",
+        "question": "Please estimate the curvature of the line. (0 is no curvature - 1 is the maximum curvature) The more bend the line is, the higher the curvature. No explanation.",
+        "value": 0.033
+    },
+    {
+        "id": "2165553f-263d-4923-9d33-def3ed25ebe7",
+        "image": "images/curvature_2165553f-263d-4923-9d33-def3ed25ebe7.jpg",
+        "task": "curvature",
+        "question": "Please estimate the curvature of the line. (0 is no curvature - 1 is the maximum curvature) The more bend the line is, the higher the curvature. No explanation.",
+        "value": 0.074
+    },
+    {
+        "id": "85127a9c-cfc4-49cc-8cdc-bf6d4496a001",
+        "image": "images/curvature_85127a9c-cfc4-49cc-8cdc-bf6d4496a001.jpg",
+        "task": "curvature",
+        "question": "Please estimate the curvature of the line. (0 is no curvature - 1 is the maximum curvature) The more bend the line is, the higher the curvature. No explanation.",
+        "value": 0.076
+    },
+    {
+        "id": "ae9d30e8-2e6e-4ad9-ba1d-e95b7d2bfd44",
+        "image": "images/curvature_ae9d30e8-2e6e-4ad9-ba1d-e95b7d2bfd44.jpg",
+        "task": "curvature",
+        "question": "Please estimate the curvature of the line. (0 is no curvature - 1 is the maximum curvature) The more bend the line is, the higher the curvature. No explanation.",
+        "value": 0.046
+    },
+    {
+        "id": "a2fcb0a1-a46a-466e-89b2-27376ae4467b",
+        "image": "images/curvature_a2fcb0a1-a46a-466e-89b2-27376ae4467b.jpg",
+        "task": "curvature",
+        "question": "Please estimate the curvature of the line. (0 is no curvature - 1 is the maximum curvature) The more bend the line is, the higher the curvature. No explanation.",
+        "value": 0.072
+    },
+    {
+        "id": "32b9eaec-e91a-4075-ab5d-527f5710a283",
+        "image": "images/curvature_32b9eaec-e91a-4075-ab5d-527f5710a283.jpg",
+        "task": "curvature",
+        "question": "Please estimate the curvature of the line. (0 is no curvature - 1 is the maximum curvature) The more bend the line is, the higher the curvature. No explanation.",
+        "value": 0.068
+    },
+    {
+        "id": "12733ade-66ad-4dbc-a451-220603ca6b87",
+        "image": "images/curvature_12733ade-66ad-4dbc-a451-220603ca6b87.jpg",
+        "task": "curvature",
+        "question": "Please estimate the curvature of the line. (0 is no curvature - 1 is the maximum curvature) The more bend the line is, the higher the curvature. No explanation.",
+        "value": 0.059
+    },
+    {
+        "id": "03fe3597-ad58-4fd3-a21f-184439c035b7",
+        "image": "images/curvature_03fe3597-ad58-4fd3-a21f-184439c035b7.jpg",
+        "task": "curvature",
+        "question": "Please estimate the curvature of the line. (0 is no curvature - 1 is the maximum curvature) The more bend the line is, the higher the curvature. No explanation.",
+        "value": 0.033
+    },
+    {
+        "id": "36a843b0-1914-4416-bf05-453c49a4b2fa",
+        "image": "images/shading_36a843b0-1914-4416-bf05-453c49a4b2fa.jpg",
+        "task": "shading",
+        "question": "Please estimate the shading density or texture density (range 0 to 100). No explanation.",
+        "value": 51.0
+    },
+    {
+        "id": "b9e7ded2-c57d-4c9c-b7e0-07ad36ef111c",
+        "image": "images/shading_b9e7ded2-c57d-4c9c-b7e0-07ad36ef111c.jpg",
+        "task": "shading",
+        "question": "Please estimate the shading density or texture density (range 0 to 100). No explanation.",
+        "value": 16.0
+    },
+    {
+        "id": "7228a56b-90dd-4181-8cc6-3451b7fd87dd",
+        "image": "images/shading_7228a56b-90dd-4181-8cc6-3451b7fd87dd.jpg",
+        "task": "shading",
+        "question": "Please estimate the shading density or texture density (range 0 to 100). No explanation.",
+        "value": 15.0
+    },
+    {
+        "id": "5b8722d9-71df-4ccd-b415-95b1975db7d0",
+        "image": "images/shading_5b8722d9-71df-4ccd-b415-95b1975db7d0.jpg",
+        "task": "shading",
+        "question": "Please estimate the shading density or texture density (range 0 to 100). No explanation.",
+        "value": 16.0
+    },
+    {
+        "id": "f580dbfe-4287-471d-94be-0582895af25e",
+        "image": "images/shading_f580dbfe-4287-471d-94be-0582895af25e.jpg",
+        "task": "shading",
+        "question": "Please estimate the shading density or texture density (range 0 to 100). No explanation.",
+        "value": 73.0
+    },
+    {
+        "id": "1c748ec4-ac22-4f55-84ef-02885e6fe4d4",
+        "image": "images/shading_1c748ec4-ac22-4f55-84ef-02885e6fe4d4.jpg",
+        "task": "shading",
+        "question": "Please estimate the shading density or texture density (range 0 to 100). No explanation.",
+        "value": 54.0
+    },
+    {
+        "id": "a27dbe31-e250-4a9d-94bd-36330953f7bc",
+        "image": "images/shading_a27dbe31-e250-4a9d-94bd-36330953f7bc.jpg",
+        "task": "shading",
+        "question": "Please estimate the shading density or texture density (range 0 to 100). No explanation.",
+        "value": 35.0
+    },
+    {
+        "id": "56d2cdb5-180a-478a-9a52-b82548e8e5d5",
+        "image": "images/shading_56d2cdb5-180a-478a-9a52-b82548e8e5d5.jpg",
+        "task": "shading",
+        "question": "Please estimate the shading density or texture density (range 0 to 100). No explanation.",
+        "value": 27.0
+    },
+    {
+        "id": "3f439ba9-8e86-4456-8f2f-cce28491253f",
+        "image": "images/shading_3f439ba9-8e86-4456-8f2f-cce28491253f.jpg",
+        "task": "shading",
+        "question": "Please estimate the shading density or texture density (range 0 to 100). No explanation.",
+        "value": 59.0
+    },
+    {
+        "id": "5c1adcf1-3b0b-41cb-ae26-d7b17094b2fe",
+        "image": "images/shading_5c1adcf1-3b0b-41cb-ae26-d7b17094b2fe.jpg",
+        "task": "shading",
+        "question": "Please estimate the shading density or texture density (range 0 to 100). No explanation.",
+        "value": 87.0
+    }
+]

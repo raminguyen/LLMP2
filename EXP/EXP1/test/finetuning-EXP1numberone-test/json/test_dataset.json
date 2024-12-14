@@ -1,0 +1,65 @@
+[
+    {
+        "id": "307bbd97-6dea-4720-8bff-eb87c4699891",
+        "image": "images/position_common_scale_307bbd97-6dea-4720-8bff-eb87c4699891.jpg",
+        "task": "position_common_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 0, Bottom is 60). So the range is 0 - 60. No explanation.",
+        "value": 34.0
+    },
+    {
+        "id": "bcddcc68-2eab-4231-baba-60754ec201e6",
+        "image": "images/position_non_aligned_scale_bcddcc68-2eab-4231-baba-60754ec201e6.jpg",
+        "task": "position_non_aligned_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 22, Bottom is 40). So the range is 22 - 40. No explanation.",
+        "value": 29.0
+    },
+    {
+        "id": "4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2",
+        "image": "images/length_4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2.jpg",
+        "task": "length",
+        "question": "Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.",
+        "value": 59.0
+    },
+    {
+        "id": "b1e9d1d9-1455-436c-9a95-56820416c01e",
+        "image": "images/direction_b1e9d1d9-1455-436c-9a95-56820416c01e.jpg",
+        "task": "direction",
+        "question": "Please estimate the direction of the line relative to the starting dot in the range 0 - 359 degrees. No explanation.",
+        "value": 133.0
+    },
+    {
+        "id": "d10f57d9-9c0e-43fb-bf14-7888b0b4dba7",
+        "image": "images/angle_d10f57d9-9c0e-43fb-bf14-7888b0b4dba7.jpg",
+        "task": "angle",
+        "question": "Please estimate the angle (0-90 degrees). No explanation.",
+        "value": 7.0
+    },
+    {
+        "id": "6d9e94b0-f1bb-4202-880a-24679bf2c8c7",
+        "image": "images/area_6d9e94b0-f1bb-4202-880a-24679bf2c8c7.jpg",
+        "task": "area",
+        "question": "Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 314.1592653589793
+    },
+    {
+        "id": "a2eba646-2b3d-4b8b-947d-79dedb9e0e59",
+        "image": "images/volume_a2eba646-2b3d-4b8b-947d-79dedb9e0e59.jpg",
+        "task": "volume",
+        "question": "Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 2744.0
+    },
+    {
+        "id": "ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8",
+        "image": "images/curvature_ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8.jpg",
+        "task": "curvature",
+        "question": "Please estimate the curvature of the line. (0 is no curvature - 1 is the maximum curvature) The more bend the line is, the higher the curvature. No explanation.",
+        "value": 0.008
+    },
+    {
+        "id": "831ecd20-3239-4c35-aa72-22a5a3058c0b",
+        "image": "images/shading_831ecd20-3239-4c35-aa72-22a5a3058c0b.jpg",
+        "task": "shading",
+        "question": "Please estimate the shading density or texture density (range 0 to 100). No explanation.",
+        "value": 13.0
+    }
+]

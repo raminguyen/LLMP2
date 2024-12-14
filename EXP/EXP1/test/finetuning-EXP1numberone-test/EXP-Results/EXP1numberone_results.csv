@@ -1,0 +1,455 @@
+task_name,query,run,model_name,image_path,ground_truth,raw_answer,time_ms
+position_common_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",1,CustomLLaMA,./finetuning-EXP1numberone/images/position_common_scale_307bbd97-6dea-4720-8bff-eb87c4699891.jpg,34.0,"user
+Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.
+assistant
+
+27.0",719.3586826324463
+position_common_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",1,gpt4o,./finetuning-EXP1numberone/images/position_common_scale_307bbd97-6dea-4720-8bff-eb87c4699891.jpg,34.0,30,7293.615818023682
+position_common_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",1,LLaMA,./finetuning-EXP1numberone/images/position_common_scale_307bbd97-6dea-4720-8bff-eb87c4699891.jpg,34.0,"user
+
+Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.assistant
+
+42",7596.853494644165
+position_common_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",1,GeminiProVision,./finetuning-EXP1numberone/images/position_common_scale_307bbd97-6dea-4720-8bff-eb87c4699891.jpg,34.0,"28
+",5755.48529624939
+position_common_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",1,Gemini1_5Flash,./finetuning-EXP1numberone/images/position_common_scale_307bbd97-6dea-4720-8bff-eb87c4699891.jpg,34.0,"27
+",5403.81121635437
+position_common_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",2,CustomLLaMA,./finetuning-EXP1numberone/images/position_common_scale_307bbd97-6dea-4720-8bff-eb87c4699891.jpg,34.0,"user
+Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.
+assistant
+
+22.0",527.7528762817383
+position_common_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",2,gpt4o,./finetuning-EXP1numberone/images/position_common_scale_307bbd97-6dea-4720-8bff-eb87c4699891.jpg,34.0,36,6008.91637802124
+position_common_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",2,LLaMA,./finetuning-EXP1numberone/images/position_common_scale_307bbd97-6dea-4720-8bff-eb87c4699891.jpg,34.0,"user
+
+Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.assistant
+
+44",7491.270303726196
+position_common_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",2,GeminiProVision,./finetuning-EXP1numberone/images/position_common_scale_307bbd97-6dea-4720-8bff-eb87c4699891.jpg,34.0,"22
+",5667.626857757568
+position_common_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",2,Gemini1_5Flash,./finetuning-EXP1numberone/images/position_common_scale_307bbd97-6dea-4720-8bff-eb87c4699891.jpg,34.0,"35
+",5424.443960189819
+position_common_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",3,CustomLLaMA,./finetuning-EXP1numberone/images/position_common_scale_307bbd97-6dea-4720-8bff-eb87c4699891.jpg,34.0,"user
+Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.
+assistant
+
+33.0",556.588888168335
+position_common_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",3,gpt4o,./finetuning-EXP1numberone/images/position_common_scale_307bbd97-6dea-4720-8bff-eb87c4699891.jpg,34.0,30,5866.097450256348
+position_common_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",3,LLaMA,./finetuning-EXP1numberone/images/position_common_scale_307bbd97-6dea-4720-8bff-eb87c4699891.jpg,34.0,"user
+
+Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.assistant
+
+33",7262.956857681274
+position_common_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",3,GeminiProVision,./finetuning-EXP1numberone/images/position_common_scale_307bbd97-6dea-4720-8bff-eb87c4699891.jpg,34.0,"27
+",5619.199991226196
+position_common_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",3,Gemini1_5Flash,./finetuning-EXP1numberone/images/position_common_scale_307bbd97-6dea-4720-8bff-eb87c4699891.jpg,34.0,"30
+",5390.972375869751
+position_non_aligned_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",1,CustomLLaMA,./finetuning-EXP1numberone/images/position_non_aligned_scale_bcddcc68-2eab-4231-baba-60754ec201e6.jpg,29.0,"user
+Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.
+assistant
+
+26.0",528.4690856933594
+position_non_aligned_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",1,gpt4o,./finetuning-EXP1numberone/images/position_non_aligned_scale_bcddcc68-2eab-4231-baba-60754ec201e6.jpg,29.0,34,6495.888710021973
+position_non_aligned_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",1,LLaMA,./finetuning-EXP1numberone/images/position_non_aligned_scale_bcddcc68-2eab-4231-baba-60754ec201e6.jpg,29.0,"user
+
+Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.assistant
+
+44",7587.157249450684
+position_non_aligned_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",1,GeminiProVision,./finetuning-EXP1numberone/images/position_non_aligned_scale_bcddcc68-2eab-4231-baba-60754ec201e6.jpg,29.0,"28
+",5658.004283905029
+position_non_aligned_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",1,Gemini1_5Flash,./finetuning-EXP1numberone/images/position_non_aligned_scale_bcddcc68-2eab-4231-baba-60754ec201e6.jpg,29.0,"30
+",5374.048471450806
+position_non_aligned_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",2,CustomLLaMA,./finetuning-EXP1numberone/images/position_non_aligned_scale_bcddcc68-2eab-4231-baba-60754ec201e6.jpg,29.0,"user
+Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.
+assistant
+
+28.0",524.3217945098877
+position_non_aligned_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",2,gpt4o,./finetuning-EXP1numberone/images/position_non_aligned_scale_bcddcc68-2eab-4231-baba-60754ec201e6.jpg,29.0,30,6265.172719955444
+position_non_aligned_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",2,LLaMA,./finetuning-EXP1numberone/images/position_non_aligned_scale_bcddcc68-2eab-4231-baba-60754ec201e6.jpg,29.0,"user
+
+Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.assistant
+
+30",7309.239149093628
+position_non_aligned_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",2,GeminiProVision,./finetuning-EXP1numberone/images/position_non_aligned_scale_bcddcc68-2eab-4231-baba-60754ec201e6.jpg,29.0,"25
+",5664.444208145142
+position_non_aligned_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",2,Gemini1_5Flash,./finetuning-EXP1numberone/images/position_non_aligned_scale_bcddcc68-2eab-4231-baba-60754ec201e6.jpg,29.0,"30
+",5421.205759048462
+position_non_aligned_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",3,CustomLLaMA,./finetuning-EXP1numberone/images/position_non_aligned_scale_bcddcc68-2eab-4231-baba-60754ec201e6.jpg,29.0,"user
+Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.
+assistant
+
+24.0",640.0547027587891
+position_non_aligned_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",3,gpt4o,./finetuning-EXP1numberone/images/position_non_aligned_scale_bcddcc68-2eab-4231-baba-60754ec201e6.jpg,29.0,30,6234.817266464233
+position_non_aligned_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",3,LLaMA,./finetuning-EXP1numberone/images/position_non_aligned_scale_bcddcc68-2eab-4231-baba-60754ec201e6.jpg,29.0,"user
+
+Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.assistant
+
+41",7504.81390953064
+position_non_aligned_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",3,GeminiProVision,./finetuning-EXP1numberone/images/position_non_aligned_scale_bcddcc68-2eab-4231-baba-60754ec201e6.jpg,29.0,"28
+",5654.512405395508
+position_non_aligned_scale,"Estimate the block's vertical position (range: 0-60, top to bottom). Number only. No explanation.",3,Gemini1_5Flash,./finetuning-EXP1numberone/images/position_non_aligned_scale_bcddcc68-2eab-4231-baba-60754ec201e6.jpg,29.0,"30
+",5375.214576721191
+length,Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.,1,CustomLLaMA,./finetuning-EXP1numberone/images/length_4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2.jpg,59.0,"user
+Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.
+assistant
+
+27.0",542.3316955566406
+length,Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.,1,gpt4o,./finetuning-EXP1numberone/images/length_4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2.jpg,59.0,20,6109.611511230469
+length,Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.,1,LLaMA,./finetuning-EXP1numberone/images/length_4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2.jpg,59.0,"user
+
+Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.assistant
+
+**Step 1: Determine the line length.**
+
+*   The line is about 80 pixels long.
+
+**Step 2: Answer the question.**
+
+*   80",10048.810958862305
+length,Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.,1,GeminiProVision,./finetuning-EXP1numberone/images/length_4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2.jpg,59.0,"70
+",5654.287815093994
+length,Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.,1,Gemini1_5Flash,./finetuning-EXP1numberone/images/length_4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2.jpg,59.0,"60
+",5474.969863891602
+length,Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.,2,CustomLLaMA,./finetuning-EXP1numberone/images/length_4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2.jpg,59.0,"user
+Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.
+assistant
+
+27.0",523.8809585571289
+length,Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.,2,gpt4o,./finetuning-EXP1numberone/images/length_4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2.jpg,59.0,20,5870.877027511597
+length,Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.,2,LLaMA,./finetuning-EXP1numberone/images/length_4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2.jpg,59.0,"user
+
+Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.assistant
+
+65",7319.180488586426
+length,Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.,2,GeminiProVision,./finetuning-EXP1numberone/images/length_4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2.jpg,59.0,"70
+",5632.337808609009
+length,Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.,2,Gemini1_5Flash,./finetuning-EXP1numberone/images/length_4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2.jpg,59.0,"60
+",5392.827272415161
+length,Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.,3,CustomLLaMA,./finetuning-EXP1numberone/images/length_4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2.jpg,59.0,"user
+Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.
+assistant
+
+24.0",536.9226932525635
+length,Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.,3,gpt4o,./finetuning-EXP1numberone/images/length_4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2.jpg,59.0,10,6528.414011001587
+length,Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.,3,LLaMA,./finetuning-EXP1numberone/images/length_4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2.jpg,59.0,"user
+
+Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.assistant
+
+57",7245.291471481323
+length,Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.,3,GeminiProVision,./finetuning-EXP1numberone/images/length_4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2.jpg,59.0,"70
+",5633.626699447632
+length,Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.,3,Gemini1_5Flash,./finetuning-EXP1numberone/images/length_4d43ee8e-d010-45dd-8b69-1e7c8de3e5f2.jpg,59.0,"60
+",5373.850107192993
+direction,Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.,1,CustomLLaMA,./finetuning-EXP1numberone/images/direction_b1e9d1d9-1455-436c-9a95-56820416c01e.jpg,133.0,"user
+Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.
+assistant
+
+77.0",549.1931438446045
+direction,Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.,1,gpt4o,./finetuning-EXP1numberone/images/direction_b1e9d1d9-1455-436c-9a95-56820416c01e.jpg,133.0,45,6028.681755065918
+direction,Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.,1,LLaMA,./finetuning-EXP1numberone/images/direction_b1e9d1d9-1455-436c-9a95-56820416c01e.jpg,133.0,"user
+
+Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.assistant
+
+123.0",7569.376468658447
+direction,Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.,1,GeminiProVision,./finetuning-EXP1numberone/images/direction_b1e9d1d9-1455-436c-9a95-56820416c01e.jpg,133.0,"315
+",5667.715311050415
+direction,Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.,1,Gemini1_5Flash,./finetuning-EXP1numberone/images/direction_b1e9d1d9-1455-436c-9a95-56820416c01e.jpg,133.0,"315
+",5429.3622970581055
+direction,Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.,2,CustomLLaMA,./finetuning-EXP1numberone/images/direction_b1e9d1d9-1455-436c-9a95-56820416c01e.jpg,133.0,"user
+Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.
+assistant
+
+134.0",556.5569400787354
+direction,Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.,2,gpt4o,./finetuning-EXP1numberone/images/direction_b1e9d1d9-1455-436c-9a95-56820416c01e.jpg,133.0,45,7032.539367675781
+direction,Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.,2,LLaMA,./finetuning-EXP1numberone/images/direction_b1e9d1d9-1455-436c-9a95-56820416c01e.jpg,133.0,"user
+
+Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.assistant
+
+124",7458.350896835327
+direction,Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.,2,GeminiProVision,./finetuning-EXP1numberone/images/direction_b1e9d1d9-1455-436c-9a95-56820416c01e.jpg,133.0,"45
+",5630.544185638428
+direction,Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.,2,Gemini1_5Flash,./finetuning-EXP1numberone/images/direction_b1e9d1d9-1455-436c-9a95-56820416c01e.jpg,133.0,"315
+",5398.616790771484
+direction,Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.,3,CustomLLaMA,./finetuning-EXP1numberone/images/direction_b1e9d1d9-1455-436c-9a95-56820416c01e.jpg,133.0,"user
+Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.
+assistant
+
+54.0",620.2435493469238
+direction,Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.,3,gpt4o,./finetuning-EXP1numberone/images/direction_b1e9d1d9-1455-436c-9a95-56820416c01e.jpg,133.0,322,6043.085813522339
+direction,Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.,3,LLaMA,./finetuning-EXP1numberone/images/direction_b1e9d1d9-1455-436c-9a95-56820416c01e.jpg,133.0,"user
+
+Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.assistant
+
+141",7282.999277114868
+direction,Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.,3,GeminiProVision,./finetuning-EXP1numberone/images/direction_b1e9d1d9-1455-436c-9a95-56820416c01e.jpg,133.0,"45
+",5654.124736785889
+direction,Estimate the line's direction (range: 0-359 degrees). Number only. No explanation.,3,Gemini1_5Flash,./finetuning-EXP1numberone/images/direction_b1e9d1d9-1455-436c-9a95-56820416c01e.jpg,133.0,"315
+",5633.995532989502
+angle,Estimate the angle (range: 0-90 degrees). Number only. No explanation.,1,CustomLLaMA,./finetuning-EXP1numberone/images/angle_d10f57d9-9c0e-43fb-bf14-7888b0b4dba7.jpg,7.0,"user
+Estimate the angle (range: 0-90 degrees). Number only. No explanation.
+assistant
+
+77.0",552.2968769073486
+angle,Estimate the angle (range: 0-90 degrees). Number only. No explanation.,1,gpt4o,./finetuning-EXP1numberone/images/angle_d10f57d9-9c0e-43fb-bf14-7888b0b4dba7.jpg,7.0,45,7375.32901763916
+angle,Estimate the angle (range: 0-90 degrees). Number only. No explanation.,1,LLaMA,./finetuning-EXP1numberone/images/angle_d10f57d9-9c0e-43fb-bf14-7888b0b4dba7.jpg,7.0,"user
+
+Estimate the angle (range: 0-90 degrees). Number only. No explanation.assistant
+
+68",7535.213947296143
+angle,Estimate the angle (range: 0-90 degrees). Number only. No explanation.,1,GeminiProVision,./finetuning-EXP1numberone/images/angle_d10f57d9-9c0e-43fb-bf14-7888b0b4dba7.jpg,7.0,"30
+",5642.39764213562
+angle,Estimate the angle (range: 0-90 degrees). Number only. No explanation.,1,Gemini1_5Flash,./finetuning-EXP1numberone/images/angle_d10f57d9-9c0e-43fb-bf14-7888b0b4dba7.jpg,7.0,"30
+",5414.140462875366
+angle,Estimate the angle (range: 0-90 degrees). Number only. No explanation.,2,CustomLLaMA,./finetuning-EXP1numberone/images/angle_d10f57d9-9c0e-43fb-bf14-7888b0b4dba7.jpg,7.0,"user
+Estimate the angle (range: 0-90 degrees). Number only. No explanation.
+assistant
+
+37.0",560.9710216522217
+angle,Estimate the angle (range: 0-90 degrees). Number only. No explanation.,2,gpt4o,./finetuning-EXP1numberone/images/angle_d10f57d9-9c0e-43fb-bf14-7888b0b4dba7.jpg,7.0,45,5959.70606803894
+angle,Estimate the angle (range: 0-90 degrees). Number only. No explanation.,2,LLaMA,./finetuning-EXP1numberone/images/angle_d10f57d9-9c0e-43fb-bf14-7888b0b4dba7.jpg,7.0,"user
+
+Estimate the angle (range: 0-90 degrees). Number only. No explanation.assistant
+
+**Step 1: Analyze the image**
+
+The image is a scatterplot of a dataset with a large number of data points. There are no clear patterns or trends in the data.
+
+**Step 2: Identify the shape of the data**
+
+The data points are scattered randomly throughout the plot, with no discernible shape or pattern. There are no clusters, outliers, or correlations between the variables.
+
+**Step 3: Estimate the angle**
+
+Since there is no clear pattern or shape in the data, it is not possible to estimate an angle.
+
+**Answer:** 0",15786.385774612427
+angle,Estimate the angle (range: 0-90 degrees). Number only. No explanation.,2,GeminiProVision,./finetuning-EXP1numberone/images/angle_d10f57d9-9c0e-43fb-bf14-7888b0b4dba7.jpg,7.0,"30
+",5646.329641342163
+angle,Estimate the angle (range: 0-90 degrees). Number only. No explanation.,2,Gemini1_5Flash,./finetuning-EXP1numberone/images/angle_d10f57d9-9c0e-43fb-bf14-7888b0b4dba7.jpg,7.0,"30
+",5393.358945846558
+angle,Estimate the angle (range: 0-90 degrees). Number only. No explanation.,3,CustomLLaMA,./finetuning-EXP1numberone/images/angle_d10f57d9-9c0e-43fb-bf14-7888b0b4dba7.jpg,7.0,"user
+Estimate the angle (range: 0-90 degrees). Number only. No explanation.
+assistant
+
+40.0",522.5331783294678
+angle,Estimate the angle (range: 0-90 degrees). Number only. No explanation.,3,gpt4o,./finetuning-EXP1numberone/images/angle_d10f57d9-9c0e-43fb-bf14-7888b0b4dba7.jpg,7.0,40,6084.598064422607
+angle,Estimate the angle (range: 0-90 degrees). Number only. No explanation.,3,LLaMA,./finetuning-EXP1numberone/images/angle_d10f57d9-9c0e-43fb-bf14-7888b0b4dba7.jpg,7.0,"user
+
+Estimate the angle (range: 0-90 degrees). Number only. No explanation.assistant
+
+70",7555.796146392822
+angle,Estimate the angle (range: 0-90 degrees). Number only. No explanation.,3,GeminiProVision,./finetuning-EXP1numberone/images/angle_d10f57d9-9c0e-43fb-bf14-7888b0b4dba7.jpg,7.0,"35
+",5662.387847900391
+angle,Estimate the angle (range: 0-90 degrees). Number only. No explanation.,3,Gemini1_5Flash,./finetuning-EXP1numberone/images/angle_d10f57d9-9c0e-43fb-bf14-7888b0b4dba7.jpg,7.0,"30
+",5412.680864334106
+area,"Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",1,CustomLLaMA,./finetuning-EXP1numberone/images/area_6d9e94b0-f1bb-4202-880a-24679bf2c8c7.jpg,314.1592653589793,"user
+Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.
+assistant
+
+1546.9035137640335",769.8845863342285
+area,"Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",1,gpt4o,./finetuning-EXP1numberone/images/area_6d9e94b0-f1bb-4202-880a-24679bf2c8c7.jpg,314.1592653589793,7853.98,5869.760036468506
+area,"Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",1,LLaMA,./finetuning-EXP1numberone/images/area_6d9e94b0-f1bb-4202-880a-24679bf2c8c7.jpg,314.1592653589793,"user
+
+Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.assistant
+
+**Step 1: Calculate the radius of the circle**
+
+The radius of the circle is half the diameter, which is half the width or height of the image. 
+
+Radius = diameter / 2 = 100 / 2 = 50 pixels
+
+**Step 2: Calculate the area of the circle**
+
+The area of a circle is given by the formula A = πr^2, where r is the radius. 
+
+A = π(50)^2 = 3.14159 * 2500 = 7853.98
+
+**Step 3: Check if the area is within the given range**
+
+The calculated area (7853.98) is within the given range of 3.14 to 5026.55 square units.
+
+**Answer:** 7853.98",19474.578142166138
+area,"Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",1,GeminiProVision,./finetuning-EXP1numberone/images/area_6d9e94b0-f1bb-4202-880a-24679bf2c8c7.jpg,314.1592653589793,7854,5660.344362258911
+area,"Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",1,Gemini1_5Flash,./finetuning-EXP1numberone/images/area_6d9e94b0-f1bb-4202-880a-24679bf2c8c7.jpg,314.1592653589793,"7853.98
+",5420.347213745117
+area,"Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",2,CustomLLaMA,./finetuning-EXP1numberone/images/area_6d9e94b0-f1bb-4202-880a-24679bf2c8c7.jpg,314.1592653589793,"user
+Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.
+assistant
+
+3456.124763342005",730.1502227783203
+area,"Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",2,gpt4o,./finetuning-EXP1numberone/images/area_6d9e94b0-f1bb-4202-880a-24679bf2c8c7.jpg,314.1592653589793,7853.98,96859.06147956848
+area,"Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",2,LLaMA,./finetuning-EXP1numberone/images/area_6d9e94b0-f1bb-4202-880a-24679bf2c8c7.jpg,314.1592653589793,"user
+
+Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.assistant
+
+**Step 1: Identify the circle in the image.**
+
+The circle is centered at the middle of the image, with its radius equal to half the side length of the square that contains it.
+
+**Step 2: Calculate the area of the circle.**
+
+The area of a circle is given by the formula A = πr^2, where r is the radius. Since the radius is half the side length of the square, which is 50 pixels, the radius is 50/2 = 25 pixels.
+
+**Step 3: Calculate the area of the circle.**
+
+A = π(25)^2
+A = 3.14 * 625
+A = 1962.5
+
+**Step 4: Ensure the answer falls within the given range.**
+
+The calculated area is within the range of 3.14 to 5026.55 square units.
+
+**Answer:** 1962.5",21221.42744064331
+area,"Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",2,GeminiProVision,./finetuning-EXP1numberone/images/area_6d9e94b0-f1bb-4202-880a-24679bf2c8c7.jpg,314.1592653589793,7854,5643.050670623779
+area,"Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",2,Gemini1_5Flash,./finetuning-EXP1numberone/images/area_6d9e94b0-f1bb-4202-880a-24679bf2c8c7.jpg,314.1592653589793,"7854
+",5378.849744796753
+area,"Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",3,CustomLLaMA,./finetuning-EXP1numberone/images/area_6d9e94b0-f1bb-4202-880a-24679bf2c8c7.jpg,314.1592653589793,"user
+Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.
+assistant
+
+1546.9030797790193",894.3941593170166
+area,"Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",3,gpt4o,./finetuning-EXP1numberone/images/area_6d9e94b0-f1bb-4202-880a-24679bf2c8c7.jpg,314.1592653589793,7853.98,6043.597221374512
+area,"Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",3,LLaMA,./finetuning-EXP1numberone/images/area_6d9e94b0-f1bb-4202-880a-24679bf2c8c7.jpg,314.1592653589793,"user
+
+Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.assistant
+
+The area of the circle is 314.",8016.579627990723
+area,"Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",3,GeminiProVision,./finetuning-EXP1numberone/images/area_6d9e94b0-f1bb-4202-880a-24679bf2c8c7.jpg,314.1592653589793,7854,5642.058610916138
+area,"Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",3,Gemini1_5Flash,./finetuning-EXP1numberone/images/area_6d9e94b0-f1bb-4202-880a-24679bf2c8c7.jpg,314.1592653589793,"7853.98
+",5418.689489364624
+volume,"Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",1,CustomLLaMA,./finetuning-EXP1numberone/images/volume_a2eba646-2b3d-4b8b-947d-79dedb9e0e59.jpg,2744.0,"user
+Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.
+assistant
+
+1000.0",588.9232158660889
+volume,"Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",1,gpt4o,./finetuning-EXP1numberone/images/volume_a2eba646-2b3d-4b8b-947d-79dedb9e0e59.jpg,2744.0,6859,6041.686296463013
+volume,"Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",1,LLaMA,./finetuning-EXP1numberone/images/volume_a2eba646-2b3d-4b8b-947d-79dedb9e0e59.jpg,2744.0,"user
+
+Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.assistant
+
+The volume of the cube is 1000 cubic units.",8355.696439743042
+volume,"Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",1,GeminiProVision,./finetuning-EXP1numberone/images/volume_a2eba646-2b3d-4b8b-947d-79dedb9e0e59.jpg,2744.0,"1728
+",5701.190710067749
+volume,"Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",1,Gemini1_5Flash,./finetuning-EXP1numberone/images/volume_a2eba646-2b3d-4b8b-947d-79dedb9e0e59.jpg,2744.0,"729
+",5421.098947525024
+volume,"Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",2,CustomLLaMA,./finetuning-EXP1numberone/images/volume_a2eba646-2b3d-4b8b-947d-79dedb9e0e59.jpg,2744.0,"user
+Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.
+assistant
+
+2147.0",594.1329002380371
+volume,"Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",2,gpt4o,./finetuning-EXP1numberone/images/volume_a2eba646-2b3d-4b8b-947d-79dedb9e0e59.jpg,2744.0,729,6551.28026008606
+volume,"Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",2,LLaMA,./finetuning-EXP1numberone/images/volume_a2eba646-2b3d-4b8b-947d-79dedb9e0e59.jpg,2744.0,"user
+
+Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.assistant
+
+The volume of the cube is 1000 cubic units.",8233.154773712158
+volume,"Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",2,GeminiProVision,./finetuning-EXP1numberone/images/volume_a2eba646-2b3d-4b8b-947d-79dedb9e0e59.jpg,2744.0,"1728
+",5669.910907745361
+volume,"Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",2,Gemini1_5Flash,./finetuning-EXP1numberone/images/volume_a2eba646-2b3d-4b8b-947d-79dedb9e0e59.jpg,2744.0,"729
+",5398.200035095215
+volume,"Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",3,CustomLLaMA,./finetuning-EXP1numberone/images/volume_a2eba646-2b3d-4b8b-947d-79dedb9e0e59.jpg,2744.0,"user
+Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.
+assistant
+
+1000.0",566.7755603790283
+volume,"Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",3,gpt4o,./finetuning-EXP1numberone/images/volume_a2eba646-2b3d-4b8b-947d-79dedb9e0e59.jpg,2744.0,1000,5934.783935546875
+volume,"Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",3,LLaMA,./finetuning-EXP1numberone/images/volume_a2eba646-2b3d-4b8b-947d-79dedb9e0e59.jpg,2744.0,"user
+
+Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.assistant
+
+The volume of the cube is 1000 cubic units.",8265.68055152893
+volume,"Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",3,GeminiProVision,./finetuning-EXP1numberone/images/volume_a2eba646-2b3d-4b8b-947d-79dedb9e0e59.jpg,2744.0,"1728
+",5679.303407669067
+volume,"Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",3,Gemini1_5Flash,./finetuning-EXP1numberone/images/volume_a2eba646-2b3d-4b8b-947d-79dedb9e0e59.jpg,2744.0,"729
+",5402.770042419434
+curvature,"Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.",1,CustomLLaMA,./finetuning-EXP1numberone/images/curvature_ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8.jpg,0.008,"user
+Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.
+assistant
+
+0.003",542.1185493469238
+curvature,"Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.",1,gpt4o,./finetuning-EXP1numberone/images/curvature_ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8.jpg,0.008,0.042,6287.239074707031
+curvature,"Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.",1,LLaMA,./finetuning-EXP1numberone/images/curvature_ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8.jpg,0.008,"user
+
+Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.assistant
+
+The curvature of the Bezier curve is 0.008.",8378.372192382812
+curvature,"Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.",1,GeminiProVision,./finetuning-EXP1numberone/images/curvature_ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8.jpg,0.008,"0.015
+",5725.394248962402
+curvature,"Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.",1,Gemini1_5Flash,./finetuning-EXP1numberone/images/curvature_ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8.jpg,0.008,"0.018
+",5442.155361175537
+curvature,"Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.",2,CustomLLaMA,./finetuning-EXP1numberone/images/curvature_ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8.jpg,0.008,"user
+Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.
+assistant
+
+0.003",531.0883522033691
+curvature,"Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.",2,gpt4o,./finetuning-EXP1numberone/images/curvature_ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8.jpg,0.008,0.066,6026.94034576416
+curvature,"Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.",2,LLaMA,./finetuning-EXP1numberone/images/curvature_ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8.jpg,0.008,"user
+
+Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.assistant
+
+The curvature of the Bezier curve is approximately 0.027.",8200.142860412598
+curvature,"Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.",2,GeminiProVision,./finetuning-EXP1numberone/images/curvature_ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8.jpg,0.008,"0.015
+",5677.626848220825
+curvature,"Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.",2,Gemini1_5Flash,./finetuning-EXP1numberone/images/curvature_ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8.jpg,0.008,"0.027
+",5376.627206802368
+curvature,"Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.",3,CustomLLaMA,./finetuning-EXP1numberone/images/curvature_ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8.jpg,0.008,"user
+Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.
+assistant
+
+0.003",541.4218902587891
+curvature,"Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.",3,gpt4o,./finetuning-EXP1numberone/images/curvature_ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8.jpg,0.008,0.045,6263.227939605713
+curvature,"Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.",3,LLaMA,./finetuning-EXP1numberone/images/curvature_ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8.jpg,0.008,"user
+
+Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.assistant
+
+The line curvature is 0.000.",8198.121070861816
+curvature,"Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.",3,GeminiProVision,./finetuning-EXP1numberone/images/curvature_ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8.jpg,0.008,"0.015
+",5697.535276412964
+curvature,"Estimate the line curvature (range: 0.000 to 0.088) of a Bezier curve constrained within a 100x100 pixel space. Provide only the numeric curvature value (up to 3 decimal places), no explanation.",3,Gemini1_5Flash,./finetuning-EXP1numberone/images/curvature_ebcb9ac1-ba92-4ac2-a7ca-fb91c7ebeee8.jpg,0.008,"0.011
+",5706.2342166900635
+shading,Estimate shading density (range: 0-100). Number only. No explanation.,1,CustomLLaMA,./finetuning-EXP1numberone/images/shading_831ecd20-3239-4c35-aa72-22a5a3058c0b.jpg,13.0,"user
+Estimate shading density (range: 0-100). Number only. No explanation.
+assistant
+
+59.0",542.9847240447998
+shading,Estimate shading density (range: 0-100). Number only. No explanation.,1,gpt4o,./finetuning-EXP1numberone/images/shading_831ecd20-3239-4c35-aa72-22a5a3058c0b.jpg,13.0,60,5951.40814781189
+shading,Estimate shading density (range: 0-100). Number only. No explanation.,1,LLaMA,./finetuning-EXP1numberone/images/shading_831ecd20-3239-4c35-aa72-22a5a3058c0b.jpg,13.0,"user
+
+Estimate shading density (range: 0-100). Number only. No explanation.assistant
+
+85",7561.144590377808
+shading,Estimate shading density (range: 0-100). Number only. No explanation.,1,GeminiProVision,./finetuning-EXP1numberone/images/shading_831ecd20-3239-4c35-aa72-22a5a3058c0b.jpg,13.0,"15
+",5753.9379596710205
+shading,Estimate shading density (range: 0-100). Number only. No explanation.,1,Gemini1_5Flash,./finetuning-EXP1numberone/images/shading_831ecd20-3239-4c35-aa72-22a5a3058c0b.jpg,13.0,"70
+",5429.2402267456055
+shading,Estimate shading density (range: 0-100). Number only. No explanation.,2,CustomLLaMA,./finetuning-EXP1numberone/images/shading_831ecd20-3239-4c35-aa72-22a5a3058c0b.jpg,13.0,"user
+Estimate shading density (range: 0-100). Number only. No explanation.
+assistant
+
+62.0",533.433198928833
+shading,Estimate shading density (range: 0-100). Number only. No explanation.,2,gpt4o,./finetuning-EXP1numberone/images/shading_831ecd20-3239-4c35-aa72-22a5a3058c0b.jpg,13.0,60,5756.637096405029
+shading,Estimate shading density (range: 0-100). Number only. No explanation.,2,LLaMA,./finetuning-EXP1numberone/images/shading_831ecd20-3239-4c35-aa72-22a5a3058c0b.jpg,13.0,"user
+
+Estimate shading density (range: 0-100). Number only. No explanation.assistant
+
+70",7704.689979553223
+shading,Estimate shading density (range: 0-100). Number only. No explanation.,2,GeminiProVision,./finetuning-EXP1numberone/images/shading_831ecd20-3239-4c35-aa72-22a5a3058c0b.jpg,13.0,"15
+",5745.186567306519
+shading,Estimate shading density (range: 0-100). Number only. No explanation.,2,Gemini1_5Flash,./finetuning-EXP1numberone/images/shading_831ecd20-3239-4c35-aa72-22a5a3058c0b.jpg,13.0,"20
+",5430.51552772522
+shading,Estimate shading density (range: 0-100). Number only. No explanation.,3,CustomLLaMA,./finetuning-EXP1numberone/images/shading_831ecd20-3239-4c35-aa72-22a5a3058c0b.jpg,13.0,"user
+Estimate shading density (range: 0-100). Number only. No explanation.
+assistant
+
+55.0",716.6006565093994
+shading,Estimate shading density (range: 0-100). Number only. No explanation.,3,gpt4o,./finetuning-EXP1numberone/images/shading_831ecd20-3239-4c35-aa72-22a5a3058c0b.jpg,13.0,50,5843.69969367981
+shading,Estimate shading density (range: 0-100). Number only. No explanation.,3,LLaMA,./finetuning-EXP1numberone/images/shading_831ecd20-3239-4c35-aa72-22a5a3058c0b.jpg,13.0,"user
+
+Estimate shading density (range: 0-100). Number only. No explanation.assistant
+
+50",7356.108665466309
+shading,Estimate shading density (range: 0-100). Number only. No explanation.,3,GeminiProVision,./finetuning-EXP1numberone/images/shading_831ecd20-3239-4c35-aa72-22a5a3058c0b.jpg,13.0,"15
+",5746.149778366089
+shading,Estimate shading density (range: 0-100). Number only. No explanation.,3,Gemini1_5Flash,./finetuning-EXP1numberone/images/shading_831ecd20-3239-4c35-aa72-22a5a3058c0b.jpg,13.0,"70
+",5416.388988494873

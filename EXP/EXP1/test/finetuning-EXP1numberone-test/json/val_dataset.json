@@ -1,0 +1,128 @@
+[
+    {
+        "id": "79f9c7c0-cec6-4f81-a67c-013fa3387b1f",
+        "image": "images/position_common_scale_79f9c7c0-cec6-4f81-a67c-013fa3387b1f.jpg",
+        "task": "position_common_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 0, Bottom is 60). So the range is 0 - 60. No explanation.",
+        "value": 12.0
+    },
+    {
+        "id": "0e538fc3-5ab4-42e3-adfc-867128ad8286",
+        "image": "images/position_common_scale_0e538fc3-5ab4-42e3-adfc-867128ad8286.jpg",
+        "task": "position_common_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 0, Bottom is 60). So the range is 0 - 60. No explanation.",
+        "value": 23.0
+    },
+    {
+        "id": "a333d0c4-0e35-4ef1-8768-0bc23d51278b",
+        "image": "images/position_non_aligned_scale_a333d0c4-0e35-4ef1-8768-0bc23d51278b.jpg",
+        "task": "position_non_aligned_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 22, Bottom is 40). So the range is 22 - 40. No explanation.",
+        "value": 30.0
+    },
+    {
+        "id": "695aadb2-2f6b-4486-a9ee-d104819cb5a3",
+        "image": "images/position_non_aligned_scale_695aadb2-2f6b-4486-a9ee-d104819cb5a3.jpg",
+        "task": "position_non_aligned_scale",
+        "question": "Please estimate the vertical position of the block relative to the line on the left (Top is 22, Bottom is 40). So the range is 22 - 40. No explanation.",
+        "value": 33.0
+    },
+    {
+        "id": "abaa594a-f8b1-48f5-a203-90e9250202f5",
+        "image": "images/length_abaa594a-f8b1-48f5-a203-90e9250202f5.jpg",
+        "task": "length",
+        "question": "Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.",
+        "value": 25.0
+    },
+    {
+        "id": "05124b5f-d9fc-4b21-a1fb-c79798b5cf43",
+        "image": "images/length_05124b5f-d9fc-4b21-a1fb-c79798b5cf43.jpg",
+        "task": "length",
+        "question": "Estimate the line length from top to bottom (range: 0-100). Number only. No explanation.",
+        "value": 10.0
+    },
+    {
+        "id": "1b8b7ea7-87b7-4a09-af6a-c4c112b98151",
+        "image": "images/direction_1b8b7ea7-87b7-4a09-af6a-c4c112b98151.jpg",
+        "task": "direction",
+        "question": "Please estimate the direction of the line relative to the starting dot in the range 0 - 359 degrees. No explanation.",
+        "value": 108.0
+    },
+    {
+        "id": "4e477e2c-da77-4804-a825-6cbf065d855d",
+        "image": "images/direction_4e477e2c-da77-4804-a825-6cbf065d855d.jpg",
+        "task": "direction",
+        "question": "Please estimate the direction of the line relative to the starting dot in the range 0 - 359 degrees. No explanation.",
+        "value": 231.0
+    },
+    {
+        "id": "3978a5bb-0e4f-4875-9ab7-acbf2404aba1",
+        "image": "images/angle_3978a5bb-0e4f-4875-9ab7-acbf2404aba1.jpg",
+        "task": "angle",
+        "question": "Please estimate the angle (0-90 degrees). No explanation.",
+        "value": 65.0
+    },
+    {
+        "id": "d38ff65b-c7e3-4b5e-8148-13efadd5d411",
+        "image": "images/angle_d38ff65b-c7e3-4b5e-8148-13efadd5d411.jpg",
+        "task": "angle",
+        "question": "Please estimate the angle (0-90 degrees). No explanation.",
+        "value": 52.0
+    },
+    {
+        "id": "8ab7146b-76f9-4398-bf62-867af74bf748",
+        "image": "images/area_8ab7146b-76f9-4398-bf62-867af74bf748.jpg",
+        "task": "area",
+        "question": "Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 28.274333882308138
+    },
+    {
+        "id": "3b6134b6-8e33-45e6-8418-2f76a6f44542",
+        "image": "images/area_3b6134b6-8e33-45e6-8418-2f76a6f44542.jpg",
+        "task": "area",
+        "question": "Estimate the area of a circle, ensuring your answer falls within the range of 3.14 to 5026.55 square units. Assume the circle fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 201.06192982974676
+    },
+    {
+        "id": "42b3f177-dbe0-46cd-a1e1-6a263520f776",
+        "image": "images/volume_42b3f177-dbe0-46cd-a1e1-6a263520f776.jpg",
+        "task": "volume",
+        "question": "Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 5832.0
+    },
+    {
+        "id": "b3fab68b-b12d-4cdd-b7a2-8b2d23bb4a4f",
+        "image": "images/volume_b3fab68b-b12d-4cdd-b7a2-8b2d23bb4a4f.jpg",
+        "task": "volume",
+        "question": "Estimate the volume of a cube, with your answer restricted to the range of 1 to 8000 cubic units. Assume the cube fits within a 100x100 pixel image. Provide only the numeric value, no explanation.",
+        "value": 3375.0
+    },
+    {
+        "id": "7bef141e-fcc4-4391-80d8-a63d6c18d357",
+        "image": "images/curvature_7bef141e-fcc4-4391-80d8-a63d6c18d357.jpg",
+        "task": "curvature",
+        "question": "Please estimate the curvature of the line. (0 is no curvature - 1 is the maximum curvature) The more bend the line is, the higher the curvature. No explanation.",
+        "value": 0.031
+    },
+    {
+        "id": "7d9cf273-051c-438d-a619-9a3b757699d2",
+        "image": "images/curvature_7d9cf273-051c-438d-a619-9a3b757699d2.jpg",
+        "task": "curvature",
+        "question": "Please estimate the curvature of the line. (0 is no curvature - 1 is the maximum curvature) The more bend the line is, the higher the curvature. No explanation.",
+        "value": 0.041
+    },
+    {
+        "id": "8287e69c-ec0b-43b8-b36c-933f6858582b",
+        "image": "images/shading_8287e69c-ec0b-43b8-b36c-933f6858582b.jpg",
+        "task": "shading",
+        "question": "Please estimate the shading density or texture density (range 0 to 100). No explanation.",
+        "value": 37.0
+    },
+    {
+        "id": "d29a1703-f31c-4518-9de8-0b811093e3d1",
+        "image": "images/shading_d29a1703-f31c-4518-9de8-0b811093e3d1.jpg",
+        "task": "shading",
+        "question": "Please estimate the shading density or texture density (range 0 to 100). No explanation.",
+        "value": 85.0
+    }
+]
