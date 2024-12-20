@@ -1,5 +1,7 @@
 # How do Multimodal Large Language Models (MLLMs) perform when applied to graphical perception tasks?
 
+
+
 ## 🟢 How to answer this question?
 To answer this research question, our study focuses on evaluating MLLMs performance on graphical perception, which is inspired by two popular studies from Cleveland and McGrill, and Haehn et al. We incorporate our pretrained and fine-tuned MLLMs into our experiments. In particular for fine-tuned models, we compress it by training on top pretrained models, dig deep into their performance using efficient training configurations, scalable adaptation techniques to improve efficiency, and save resources.
 
