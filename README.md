@@ -8,7 +8,7 @@ We would like to investigate the answer by evaluating how Multimodal Large Langu
 To answer this research question, our study evaluates MLLMs' performance on graphical perception, inspired by two popular studies from Cleveland and McGrill, and Haehn et al. We incorporate our pretrained and fine-tuned MLLMs into our experiments. In particular, we compress fine-tuned models by training them on top of pretrained models, digging deep into their performance using efficient training configurations and scalable adaptation techniques to improve efficiency and save resources.
 
 
-You can view our data for our results here.
+You can view our data for our [results]([url](https://github.com/raminguyen/LLMP2/tree/main/Allresults)).
 
 ## Quick Intro
 Multimodal Large Language Models (MLLMs) have remarkably progressed in analyzing and understanding images. Despite these advancements, accurately regressing values in charts remains an underexplored area for MLLMs.
