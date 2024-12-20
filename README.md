@@ -8,7 +8,7 @@ To answer this research question, our study evaluates MLLMs' performance on grap
 
 🟢 You can view our data for our results here.
 
-## 🟢 Quick Intro
+## Quick Intro
 Multimodal Large Language Models (MLLMs) have remarkably progressed in analyzing and understanding images. Despite these advancements, accurately regressing values in charts remains an underexplored area for MLLMs.
 
 ## 🟢 What are our pretrained MLLMs?
@@ -22,12 +22,12 @@ We also produced 15 fine-tuned MLLMs (each experiment has three fine-tuned MLLMs
 ## 🟢 What is our direction for this study?
 Our study compares the performance of fine-tuned and pretrained models to see which models perform better. We also desire to understand where aspects of MLLMs succeed or fail in the data visualization fields.
 
-🟢 We recreated stimuli for five experiments based on Cleveland and McGill’s foundational 1984 study, comparing those results with human task performance.
+We recreated stimuli for five experiments based on Cleveland and McGill’s foundational 1984 study, comparing those results with human task performance.
 
 ![image](https://github.com/raminguyen/LLMP2/blob/main/Demo.png)
 
 
-## 🟢 What are the special features of our study?
+## What are the special features of our study?
 We integrated the most advanced packages into our study:
 - Pytorch
 - Pytorch Lighting
@@ -81,7 +81,7 @@ python EXP1fullprogressrun.py
 
 We use Experiment 1 for this demonstration.
 
-## 🟢 Authors and Acknowledgements
+## Authors and Acknowledgements
 
 We would like to thank:
 
