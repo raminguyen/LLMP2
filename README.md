@@ -5,7 +5,6 @@
 ## 🟢 How to answer this question?
 To answer this research question, our study evaluates MLLMs' performance on graphical perception, inspired by two popular studies from Cleveland and McGrill, and Haehn et al. We incorporate our pretrained and fine-tuned MLLMs into our experiments. In particular, we compress fine-tuned models by training them on top of pretrained models, digging deep into their performance using efficient training configurations and scalable adaptation techniques to improve efficiency and save resources.
 
-![image](https://github.com/raminguyen/LLMP2/blob/main/LLMP%20Paper.png)
 
 🟢 You can view our data for our results here.
 
