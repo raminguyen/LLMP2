@@ -2,7 +2,6 @@
 
 ![image](https://github.com/raminguyen/LLMP2/blob/main/Our%20Motivation.png)
 
-
 ## 🟢 How to answer this question?
 To answer this research question, our study evaluates MLLMs' performance on graphical perception, inspired by two popular studies from Cleveland and McGrill, and Haehn et al. We incorporate our pretrained and fine-tuned MLLMs into our experiments. In particular, we compress fine-tuned models by training them on top of pretrained models, digging deep into their performance using efficient training configurations and scalable adaptation techniques to improve efficiency and save resources.
 
@@ -22,9 +21,12 @@ We also produced 15 fine-tuned MLLMs (each experiment has three fine-tuned MLLMs
 ![image](https://github.com/raminguyen/LLMP2/blob/main/Our%20Work%20%26%20Technology.png)
 
 ## 🟢 What is our direction for this study?
-We would like to compare the performance between fine tuned and pretrained models to see which models perform better, and also we desire to understand where aspects of MLLMs succeed or fail in the data visualization fields.
+Our study compares the performance of fine-tuned and pretrained models to see which models perform better. We also desire to understand where aspects of MLLMs succeed or fail in the data visualization fields.
 
-## 🟢 We included 
+## 🟢 We recreated stimuli for five experiments based on Cleveland and McGill’s foundational 1984 study, comparing those results with human task performance.
+
+![image]([https://github.com/raminguyen/LLMP2/blob/main/Our%20Motivation.png](https://github.com/raminguyen/LLMP2/blob/main/Demo.png))
+
 
 ## 🟢 What are the special features of our study?
 We integrated the most advanced packages into our study:
