@@ -1,10 +1,12 @@
 # How do Multimodal Large Language Models (MLLMs) perform when applied to graphical perception tasks?
 
-![image](https://github.com/raminguyen/LLMP2/blob/main/LLMP%20Paper.png)
+![image](https://github.com/raminguyen/LLMP2/blob/main/Our%20Motivation.png)
 
 
 ## 🟢 How to answer this question?
 To answer this research question, our study evaluates MLLMs' performance on graphical perception, inspired by two popular studies from Cleveland and McGrill, and Haehn et al. We incorporate our pretrained and fine-tuned MLLMs into our experiments. In particular, we compress fine-tuned models by training them on top of pretrained models, digging deep into their performance using efficient training configurations and scalable adaptation techniques to improve efficiency and save resources.
+
+![image](https://github.com/raminguyen/LLMP2/blob/main/LLMP%20Paper.png)
 
 🟢 You can view our data for our results here.
 
@@ -22,13 +24,15 @@ We also produced 15 fine-tuned MLLMs (each experiment has three fine-tuned MLLMs
 ## 🟢 What is our direction for this study?
 We would like to compare the performance between fine tuned and pretrained models to see which models perform better, and also we desire to understand where aspects of MLLMs succeed or fail in the data visualization fields.
 
-## 🟢 What are special features of our study?
+## 🟢 We included 
+
+## 🟢 What are the special features of our study?
 We integrated the most advanced packages into our study:
 - Pytorch
 - Pytorch Lighting
 - Hugging Face Transformers
 - Distributed Data Parallel
-- Vision Encoder Decoder Models
+- Vision Encoder-Decoder Models
 - Parameter-Efficient Fine-tuning
 - Low-Rank Adaptation of Large Language Models
 - Bits-per-Bite
