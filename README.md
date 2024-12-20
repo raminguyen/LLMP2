@@ -6,15 +6,15 @@
 To answer this research question, our study evaluates MLLMs' performance on graphical perception, inspired by two popular studies from Cleveland and McGrill, and Haehn et al. We incorporate our pretrained and fine-tuned MLLMs into our experiments. In particular, we compress fine-tuned models by training them on top of pretrained models, digging deep into their performance using efficient training configurations and scalable adaptation techniques to improve efficiency and save resources.
 
 
-🟢 You can view our data for our results here.
+You can view our data for our results here.
 
 ## Quick Intro
 Multimodal Large Language Models (MLLMs) have remarkably progressed in analyzing and understanding images. Despite these advancements, accurately regressing values in charts remains an underexplored area for MLLMs.
 
-## 🟢 What are our pretrained MLLMs?
+## What are our pretrained MLLMs?
 We used the latest Multimodal Large Language Models technology, such as GPT-4o, Gemini 1.5 Flash, Gemini Pro Vision, and Llama 3.2B Vision.
 
-## 🟢 What are our finetuned MLLMs?
+## What are our finetuned MLLMs?
 We also produced 15 fine-tuned MLLMs (each experiment has three fine-tuned MLLMs) for this study, and built on top of Llama 3.2 Vision.
 
 ![image](https://github.com/raminguyen/LLMP2/blob/main/Our%20Work%20%26%20Technology.png)
@@ -40,7 +40,7 @@ We integrated the most advanced packages into our study:
 
 We also designed a comprehensive script, and everything in one place, starting from generating datasets, fine-tuned models, and evaluating their MLLMs performances to interpret and analyze visual data.
 
-## 🟢 Installation
+## Installation
 
 ### Prerequisites
 You'll need to have the following installed:
