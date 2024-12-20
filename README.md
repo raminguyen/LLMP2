@@ -80,3 +80,10 @@ python EXP1fullprogressrun.py
 ```
 
 We use Experiment 1 for this demonstration.
+
+## 🟢 Authors and acknowledgement
+
+We would like thanks to: 
+
+- Daniel Haehn helped us build the foundation for this research and advised us to integrate the latest technology into our paper.
+- Kenichi Maeda and Masha Geshvadi, helped us to write and review multiple scripts and build up our paper together.
