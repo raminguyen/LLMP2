@@ -17,6 +17,8 @@ def main(exp_number):
         folder = 'finetuning-EXP1numberfive'
     elif exp_number == 6:
         folder = 'finetuning-EXP1numbersix'
+    elif exp_number == 7:
+        folder = 'finetuning-EXP1numbersix'
     else:
         print("Invalid experiment number! Use 1, 2, 3, 4, 5, or 6.")
         return

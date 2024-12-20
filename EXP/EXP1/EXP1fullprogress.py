@@ -43,7 +43,7 @@ login('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')
 """ Define Global Numbers """
 IMAGES_PER_TASK = 5000
 MAX_EPOCHS = 5
-NUM_TEST_ROWS = 55
+NUM_TEST_ROWS = 500
 VAL_CHECK_INTERVAL = 4500
 CSV_FILENAME = "EXP1_results.csv"
 EVALUATION_TIME = 3
@@ -758,7 +758,6 @@ def define_model(model_id, learning_rate, weight_decay):
         weight_decay=weight_decay
     )
 
-
 def fine_tune_exp1(base_dir):
     """Main function to fine-tune the model."""
     dirs = setup_directories(base_dir)
@@ -829,7 +828,6 @@ def fine_tune_exp1(base_dir):
         torch.save(model.state_dict(), os.path.join(dirs["save_dir"], "model_state_dict.pth"))
         print(f"State_dict saved to {dirs['save_dir']} as fallback.")
 
-
 """ Step 3: Evaluate EXP1 """
 
 def load_test_dataset(test_dataset_path):
@@ -866,6 +864,8 @@ def evaluateEXP1(test_dataset_path, results_dir, model_dir, csv_filename, image_
     # Ensure the results directory exists
     ensure_dir_exists(results_dir)
 
+    """
+
     # Get the unique tasks
     unique_tasks = test_data['task'].unique()
 
@@ -886,6 +886,8 @@ def evaluateEXP1(test_dataset_path, results_dir, model_dir, csv_filename, image_
 
     # Combine all selected test rows into one DataFrame
     test_data = pd.concat(selected_test_data).reset_index(drop=True)
+
+    """
 
     # Initialize models
     models = {
@@ -954,7 +956,6 @@ def setup_logging(output_dir, experiment_name):
     """
     log_file = os.path.join(output_dir, f"{experiment_name}_log.txt")
     return log_file
-
 
 def run_experiment(exp_num, num_to_word):
     """
@@ -1040,7 +1041,7 @@ def run_multiple_experimentsEXP1():
     time.sleep(5)
     
     # Map numbers to words
-    num_to_word = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six"}
+    num_to_word = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven"}
 
     if len(sys.argv) < 2:
         print("ERROR: Missing experiment number argument.")

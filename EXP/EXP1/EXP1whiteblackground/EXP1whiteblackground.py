@@ -974,7 +974,6 @@ def plot_vectorized_predictions_scatter(df):
     plt.xlabel("Ground Truth", fontsize=12)
     plt.ylabel("Prediction", fontsize=12)
     plt.legend(fontsize=10)
-    plt.grid(alpha=0.6, linestyle="--")
 
     # Ensure layout fits properly
     plt.tight_layout()
@@ -1039,14 +1038,39 @@ def analyze_image_type_per_model(df):
     best_image_type_per_model = best_image_type_per_model.sort_values(by='MLAE').reset_index(drop=True)
     
     return best_image_type_per_model
+def load_and_display_image(file_path, image_type):
+    """
+    Load and prepare image for display.
+    
+    Parameters:
+    - file_path (str): Path to the image file
+    - image_type (str): Type of image being loaded
+    
+    Returns:
+    - Image: Processed image ready for display
+    """
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"File not found: {file_path}")
+    try:
+        if file_path.endswith(".png"):
+            img = Image.open(file_path)
+            if "black" in image_type:
+                img = img.convert("L")  # Grayscale for black images
+            else:
+                img = img.convert("RGB")  # RGB for white images
+        elif file_path.endswith(".pdf"):
+            pdf_document = fitz.open(file_path)
+            page = pdf_document[0]
+            pix = page.get_pixmap(dpi=300)  # Render PDF page at 300 DPI
+            img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+            pdf_document.close()
+        else:
+            raise ValueError("Unsupported file format. Only .png and .pdf are supported.")
+        return img
+    except Exception as e:
+        raise RuntimeError(f"Error loading image {file_path}: {str(e)}")
 
-import os
-import pandas as pd
-import matplotlib.pyplot as plt
-from PIL import Image
-import fitz  # PyMuPDF
-
-def plot_mlae_per_image(df, image_folder, model_colors, xlim=(3.25, 5), reference_line=3.5):
+def plot_mlae_per_image(df, image_folder, model_colors, xlim=(3.60, 4.60), reference_line=3.5):
     """
     Plots average MLAE per image type for different models with corresponding images.
     
@@ -1057,40 +1081,15 @@ def plot_mlae_per_image(df, image_folder, model_colors, xlim=(3.25, 5), referenc
     - xlim (tuple): Tuple specifying x-axis limits.
     - reference_line (float): x-coordinate for the vertical reference line.
     """
-
-
-    # Mapping from image_type to file name
+    # Mapping from image_type to display name
     image_file_mapping = {
-        "aliased_image_black": "aliased_image_black_18.png",
-        "aliased_image_white": "aliased_image_white_18.png",
-        "vectorized_image_black": "vectorized_image_black_18.pdf",
-        "vectorized_image_white": "vectorized_image_white_18.pdf",
-        "antialiased_image_white": "antialiased_image_white_18.png",
-        "antialiased_image_black": "antialiased_image_black_18.png",
+        "aliased_image_black": "ALIASED IMAGE BLACK",
+        "aliased_image_white": "ALIASED IMAGE WHITE",
+        "vectorized_image_black": "VECTORIZED IMAGE BLACK",
+        "vectorized_image_white": "VECTORIZED IMAGE WHITE",
+        "antialiased_image_white": "ANTIALIASED IMAGE WHITE",
+        "antialiased_image_black": "ANTIALIASED IMAGE BLACK",
     }
-
-    # Function to load and display images
-    def load_and_display_image(file_path, image_type):
-        if not os.path.exists(file_path):
-            raise FileNotFoundError(f"File not found: {file_path}")
-        try:
-            if file_path.endswith(".png"):
-                img = Image.open(file_path)
-                if "black" in image_type:
-                    img = img.convert("L")  # Grayscale for black images
-                else:
-                    img = img.convert("RGB")  # RGB for white images
-            elif file_path.endswith(".pdf"):
-                pdf_document = fitz.open(file_path)
-                page = pdf_document[0]
-                pix = page.get_pixmap(dpi=300)  # Render PDF page at 300 DPI
-                img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
-                pdf_document.close()
-            else:
-                raise ValueError("Unsupported file format. Only .png and .pdf are supported.")
-            return img
-        except Exception as e:
-            raise RuntimeError(f"Error loading image {file_path}: {str(e)}")
 
     # Extract image types and calculate average MLAE
     df["image_type"] = df["file_name"].apply(lambda x: "_".join(x.split("_")[:-1]))
@@ -1113,29 +1112,36 @@ def plot_mlae_per_image(df, image_folder, model_colors, xlim=(3.25, 5), referenc
 
     # Create grid layout
     nrows = len(image_types)
-    fig, axes = plt.subplots(nrows=nrows, ncols=2, figsize=(12, nrows * 2), gridspec_kw={"width_ratios": [1, 4]})
-
+    fig, axes = plt.subplots(nrows=nrows, ncols=2, figsize=(8, nrows * 2), gridspec_kw={"width_ratios": [1, 4]})
+    plt.subplots_adjust(
+        top=0.95,      # the top of the subplots of the figure
+        bottom=0.05,   # the bottom of the subplots of the figure
+        left=0.05,     # the left side of the subplots of the figure
+        right=0.95,    # the right side of the subplots of the figure
+        hspace=0.3,    # height space between subplots
+        wspace=0.3     # width space between subplots
+    )
     # Iterate over image types
     for i, image_type in enumerate(image_types):
         subset = average_mlae[average_mlae["image_type"] == image_type]
 
         # Left column: Image
         ax_img = axes[i, 0] if nrows > 1 else axes[0]
-        file_name = image_file_mapping.get(image_type, None)  # Get the exact file name
-        if file_name:
-            file_path = os.path.join(image_folder, file_name)
-            try:
-                img = load_and_display_image(file_path, image_type)
-                ax_img.imshow(img, cmap="gray" if "black" in image_type else None)
-                ax_img.axis("off")
-                ax_img.text(
-                    0.5, -0.2, image_type, transform=ax_img.transAxes, ha="center", va="top", fontsize=10, color="black"
-                )
-            except FileNotFoundError:
-                ax_img.text(0.5, 0.5, "Image not found", ha="center", va="center", fontsize=12, color="red")
-                ax_img.axis("off")
-        else:
-            ax_img.text(0.5, 0.5, "Image type not mapped", ha="center", va="center", fontsize=12, color="red")
+        
+        # Use the file mapping for display purposes
+        display_name = image_file_mapping.get(image_type, image_type)
+        file_name = f"{image_type}_18.{'pdf' if 'vectorized' in image_type else 'png'}"
+        
+        file_path = os.path.join(image_folder, file_name)
+        try:
+            img = load_and_display_image(file_path, image_type)
+            ax_img.imshow(img, cmap="gray" if "black" in image_type else None)
+            ax_img.axis("off")
+            ax_img.text(
+                0.5, -0.2, display_name, transform=ax_img.transAxes, ha="center", va="top", fontsize=10, color="black"
+            )
+        except FileNotFoundError:
+            ax_img.text(0.5, 0.5, "Image not found", ha="center", va="center", fontsize=12, color="red")
             ax_img.axis("off")
 
         # Right column: Scatter plot
@@ -1157,6 +1163,10 @@ def plot_mlae_per_image(df, image_folder, model_colors, xlim=(3.25, 5), referenc
         ax_plot.spines["right"].set_visible(False)
         ax_plot.spines["left"].set_visible(False)
 
+        # Add vertical reference lines
+        ax_plot.axvline(x=3.6, color='red', linestyle='--', linewidth=1, label="Min MLAE")
+        ax_plot.axvline(x=4.6, color='red', linestyle='--', linewidth=1, label="Max MLAE")
+
         # Set x-axis limits
         ax_plot.set_xlim(*xlim)
 
@@ -1170,26 +1180,43 @@ def plot_mlae_per_image(df, image_folder, model_colors, xlim=(3.25, 5), referenc
 
         # Hide y-ticks and labels
         ax_plot.tick_params(axis="y", left=False, labelleft=False)
-        ax_plot.grid(axis="x", linestyle="--", alpha=0.8)
 
     # Add a title
     fig.suptitle("Average MLAE for Each Image Per Model", fontsize=16, weight="bold")
 
+    model_display_names = {
+        'Gemini1_5Flash': 'Gemini 1.5 Flash',  
+        'GeminiProVision': 'Gemini Pro',       
+        'gpt4o': 'GPT-4o',                    
+        'LLaMA': 'LLama 3.2 Vision'           
+    }
+
+
     # Add legend
     legend_handles = [
-        plt.Line2D([0], [0], marker='o', color='w', label=model, markersize=10, markerfacecolor=color)
+        plt.Line2D([0], [0], 
+                marker='o', 
+                color='w', 
+                label=model_display_names.get(model, model), 
+                markersize=10, 
+                markerfacecolor=color)
         for model, color in model_colors.items()
     ]
+
     fig.legend(
         handles=legend_handles,
         loc="upper right",
         bbox_to_anchor=(1.1, 0.97),
         frameon=False,
         title="Models",
-        fontsize=12
+        fontsize=14
     )
 
+    plt.savefig('mlae_plot.png', 
+            bbox_inches='tight', 
+            format='png',
+            transparent=False)
+
     # Adjust layout
-    plt.tight_layout()
     plt.show()
 

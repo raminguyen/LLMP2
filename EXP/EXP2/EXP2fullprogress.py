@@ -1019,7 +1019,6 @@ def setup_logging(output_dir, experiment_name):
     log_file = os.path.join(output_dir, f"{experiment_name}_log.txt")
     return log_file
 
-
 def run_experiment(exp_num, num_to_word):
     """
     Run a single experiment, generating datasets, fine-tuning, and running evaluations.
