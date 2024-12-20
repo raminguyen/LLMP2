@@ -86,4 +86,6 @@ We use Experiment 1 for this demonstration.
 We would like thanks to: 
 
 - Daniel Haehn helped us build the foundation for this research and advised us to integrate the latest technology into our paper.
-- Kenichi Maeda and Masha Geshvadi, helped us to write and review multiple scripts and build up our paper together.
+- Kenichi Maeda and Masha Geshvadi helped us write and review multiple scripts and build up our paper together.
+
+We also have learned from this code, ranging from #programming, #datavisualization #imageprocessing, #machinelearning #computergraphic, and applied those to our study. Most importantly, We all contributed to this CS460 - Computer Graphics project,here at the University of Massachusetts Boston. Here's the link to the course website: [CS460.org](https://cs460.org/).  
