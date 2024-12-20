@@ -24,7 +24,7 @@ Our study compares the performance of fine-tuned and pretrained models to see wh
 
 ## 🟢 We recreated stimuli for five experiments based on Cleveland and McGill’s foundational 1984 study, comparing those results with human task performance.
 
-![image]([https://github.com/raminguyen/LLMP2/blob/main/Demo.png])
+![image](https://github.com/raminguyen/LLMP2/blob/main/Demo.png)
 
 
 ## 🟢 What are the special features of our study?
