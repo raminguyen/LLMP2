@@ -1,5 +1,6 @@
 # How do Multimodal Large Language Models (MLLMs) perform when applied to graphical perception tasks?
 
+![image](https://github.com/raminguyen/LLMP2/blob/main/LLMP%20Paper.png)
 
 
 ## 🟢 How to answer this question?
