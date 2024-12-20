@@ -168,8 +168,8 @@ def plot_results(metrics_table):
 
     # Define Human benchmark data
     human_data = {
-        'bar': (2.05, 0.115),
-        'pie': (1.035, 0.125),
+        'pie': (2.05, 0.115),
+        'bar': (1.035, 0.125),
     }
 
     # Get task images

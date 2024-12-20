@@ -230,11 +230,10 @@ def plot_results(metrics_table):
             if i == len(summary_stats_by_task) - 1:
                 if task_name in human_data:
                     human_value, human_std = human_data[task_name]
-                    human_interval = human_std * 1.96
                     y_pos = len(sorted_model_names) + y_offset 
                     
                     # Plot human error bar
-                    ax_plot.errorbar(human_value, y_pos, xerr=human_interval, 
+                    ax_plot.errorbar(human_value, y_pos, xerr=human_std, 
                                     fmt='s', color=model_colors['Human'], 
                                     capsize=5, capthick=1.5, markersize=7, label=None)
                     
@@ -282,7 +281,6 @@ def plot_results(metrics_table):
 
     plt.savefig("Figure4.png", bbox_inches='tight')
     plt.show()
-
 
 
 def process_plot(metrics_table):

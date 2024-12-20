@@ -307,10 +307,10 @@ def plot_results(metrics_table):
         # Plot human benchmark as horizontal error bar
         if task_name in human_data:
             human_value, human_std = human_data[task_name]
-            human_interval = human_std * 1.96
+
             y_pos = len(sorted_model_names) + 0.5
             
-            ax_plot.errorbar(human_value, y_pos, xerr=human_interval, 
+            ax_plot.errorbar(human_value, y_pos, xerr=human_std, 
                            fmt='s', color=model_colors['Human'], 
                            capsize=5, capthick=1.5,
                            markersize=7, label='Human' if i == 0 else None)

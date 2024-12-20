@@ -295,17 +295,16 @@ def plot_results(metrics_table):
         # Plot human benchmark as horizontal error bar
         if task_name in human_data:
             human_value, human_std = human_data[task_name]
-            human_interval = human_std * 1.96
             y_pos = len(sorted_model_names) + 0.5
             
-            ax_plot.errorbar(human_value, y_pos, xerr=human_interval, 
+            ax_plot.errorbar(human_value, y_pos, xerr=human_std, 
                            fmt='s', color=model_colors['Human'], 
                            capsize=5, capthick=1.5,
                            markersize=7, label='Human' if i == 0 else None)
 
         # Add reference lines
-        ax_plot.axvline(-6, color="black", linewidth=1)
-        ax_plot.axvline(12, color="black", linewidth=1)
+        ax_plot.axvline(-6, color="black", linewidth=2)
+        ax_plot.axvline(12, color="black", linewidth=2)
         ax_plot.grid(False)
 
         # Add blurred line at 0
@@ -347,7 +346,7 @@ def plot_results(metrics_table):
                        markersize=10, label=model_display_names[model_name])
             for model_name in model_colors.keys()
         ]
-        axes[0, 1].legend(handles=legend_elements, loc='center left', bbox_to_anchor=(1, 0.5), frameon=False)
+        axes[0, 1].legend(handles=legend_elements, loc='center left', bbox_to_anchor=(0.7, 0.5), frameon=False)
     
     plt.savefig("Figure6.png",bbox_inches='tight')
 
