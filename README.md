@@ -22,7 +22,7 @@ We also produced 15 fine-tuned MLLMs (each experiment has three fine-tuned MLLMs
 ## 🟢 What is our direction for this study?
 Our study compares the performance of fine-tuned and pretrained models to see which models perform better. We also desire to understand where aspects of MLLMs succeed or fail in the data visualization fields.
 
-## 🟢 We recreated stimuli for five experiments based on Cleveland and McGill’s foundational 1984 study, comparing those results with human task performance.
+🟢 We recreated stimuli for five experiments based on Cleveland and McGill’s foundational 1984 study, comparing those results with human task performance.
 
 ![image](https://github.com/raminguyen/LLMP2/blob/main/Demo.png)
 
