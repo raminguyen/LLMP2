@@ -8,7 +8,10 @@ We would like to investigate the answer by evaluating how Multimodal Large Langu
 To answer this research question, our study evaluates MLLMs' performance on graphical perception, inspired by two popular studies from Cleveland and McGrill, and Haehn et al. We incorporate our pretrained and fine-tuned MLLMs into our experiments. In particular, we compress fine-tuned models by training them on top of pretrained models, digging deep into their performance using efficient training configurations and scalable adaptation techniques to improve efficiency and save resources.
 
 
-You can view our data for our [results]([url](https://github.com/raminguyen/LLMP2/tree/main/Allresults)) and previous study results [here]([url](https://www.dropbox.com/scl/fo/785yzdfowdsp676r45sb8/AFLYiQyKvJ46PQOgiP0f1hY/USERSTUDY?dl=0&rlkey=y53d35aztwvakpprstz04s4hj&subfolder_nav_tracking=1)).
+ [CS460.org](https://cs460.org/)
+
+You can view our data for our [results](https://github.com/raminguyen/LLMP2/tree/main/Allresults) and previous user study results [here](https://www.dropbox.com/scl/fo/785yzdfowdsp676r45sb8/AFLYiQyKvJ46PQOgiP0f1hY/USERSTUDY?dl=0&rlkey=y53d35aztwvakpprstz04s4hj&subfolder_nav_tracking=1).
+
 
 ## Quick Intro
 Multimodal Large Language Models (MLLMs) have remarkably progressed in analyzing and understanding images. Despite these advancements, accurately regressing values in charts remains an underexplored area for MLLMs.
