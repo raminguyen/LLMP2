@@ -4,7 +4,7 @@
 
 
 ## 🟢 How to answer this question?
-To answer this research question, our study focuses on evaluating MLLMs performance on graphical perception, which is inspired by two popular studies from Cleveland and McGrill, and Haehn et al. We incorporate our pretrained and fine-tuned MLLMs into our experiments. In particular for fine-tuned models, we compress it by training on top pretrained models, dig deep into their performance using efficient training configurations, scalable adaptation techniques to improve efficiency, and save resources.
+To answer this research question, our study evaluates MLLMs' performance on graphical perception, inspired by two popular studies from Cleveland and McGrill, and Haehn et al. We incorporate our pretrained and fine-tuned MLLMs into our experiments. In particular, we compress fine-tuned models by training them on top of pretrained models, digging deep into their performance using efficient training configurations and scalable adaptation techniques to improve efficiency and save resources.
 
 🟢 You can view our data for our results here.
 
@@ -16,6 +16,8 @@ We used the latest Multimodal Large Language Models technology, such as GPT-4o, 
 
 ## 🟢 What are our finetuned MLLMs?
 We also produced 15 fine-tuned MLLMs (each experiment has three fine-tuned MLLMs) for this study, and built on top of Llama 3.2 Vision.
+
+![image](https://github.com/raminguyen/LLMP2/blob/main/Our%20Work%20%26%20Technology.png)
 
 ## 🟢 What is our direction for this study?
 We would like to compare the performance between fine tuned and pretrained models to see which models perform better, and also we desire to understand where aspects of MLLMs succeed or fail in the data visualization fields.
