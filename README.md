@@ -81,11 +81,12 @@ python EXP1fullprogressrun.py
 
 We use Experiment 1 for this demonstration.
 
-## 🟢 Authors and acknowledgement
+## 🟢 Authors and Acknowledgements
 
-We would like thanks to: 
+We would like to thank:
 
-- Daniel Haehn helped us build the foundation for this research and advised us to integrate the latest technology into our paper.
-- Kenichi Maeda and Masha Geshvadi helped us write and review multiple scripts and build up our paper together.
+- Daniel Haehn for helping us build the foundation for this research and advising us to integrate the latest technology into our paper.
+- Kenichi Maeda and Masha Geshvadi for their assistance in writing and reviewing multiple scripts and building up our paper together.
 
-We also have learned from this code, ranging from #programming, #datavisualization #imageprocessing, #machinelearning #computergraphic, and applied those to our study. Most importantly, We all contributed to this CS460 - Computer Graphics project,here at the University of Massachusetts Boston. Here's the link to the course website: [CS460.org](https://cs460.org/).  
+We have also learned a great deal from this project, spanning #programming, #datavisualization, #imageprocessing, #machinelearning, and #computergraphics, and applied these insights to our study. Most importantly, we all contributed to this CS460 - Computer Graphics project at the University of Massachusetts Boston. Here's the link to the course website: [CS460.org](https://cs460.org/).
+
