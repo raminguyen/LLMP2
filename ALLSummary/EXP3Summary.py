@@ -199,6 +199,7 @@ def plot_results(metrics_table):
     for i, (task_name, task_data) in enumerate(summary_stats_by_task.items()):
         ax_img, ax_plot, ax_label = axes[i]
 
+        # Plot task image
         if task_name in task_images:
             img_path = task_images[task_name]
             if os.path.exists(img_path):
@@ -214,6 +215,7 @@ def plot_results(metrics_table):
         ax_img.axis('off')
         ax_img.set_title(task_display_names.get(task_name, task_name), loc="left", fontsize=16, color="black")
 
+        # Plot model MLAE values
         sorted_model_names = sorted(task_data['Model'].unique())
         y_positions = np.arange(len(sorted_model_names))
 
@@ -223,27 +225,33 @@ def plot_results(metrics_table):
             confidence_interval = model_data['Confidence Interval (95%)'].values[0]
 
             ax_plot.errorbar(mlae_value, j, xerr=confidence_interval, fmt='o', 
-                             color=model_colors.get(model_name, 'gray'), capsize=5, 
-                             label=f"{model_name}" if i == 0 else None)
+                            color=model_colors.get(model_name, 'gray'), capsize=5, 
+                            label=f"{model_name}" if i == 0 else None)
 
-        for label, human_data, y_offset in zip(["ClMcG", "HeerBos"], [human_values, human_values2],[0.1, 2]):
-            if i == len(summary_stats_by_task) - 1:
-                if task_name in human_data:
-                    human_value, human_std = human_data[task_name]
-                    y_pos = len(sorted_model_names) + y_offset 
-                    
-                    # Plot human error bar
-                    ax_plot.errorbar(human_value, y_pos, xerr=human_std, 
-                                    fmt='s', color=model_colors['Human'], 
-                                    capsize=5, capthick=1.5, markersize=7, label=None)
-                    
-                    # Align label to the left of the error bar
+        # Plot human values
+        for label, human_data, y_offset in zip(["ClMcG", "HeerBos"], [human_values, human_values2], [0.1, 2]):
+            if task_name in human_data:
+                human_value, human_std = human_data[task_name]
+                y_pos = len(sorted_model_names) + y_offset  # Position human marker
+
+                # Plot human error bar with marker
+                ax_plot.errorbar(human_value, y_pos, xerr=human_std, 
+                                fmt='s', color=model_colors.get('Human', 'black'), 
+                                capsize=5, capthick=1.5, markersize=7, label=None)
+
+                # Add human benchmark label only on the bottom subplot
+                if i == len(summary_stats_by_task) - 1:
                     ax_plot.text(human_value - 0.5, y_pos, label, fontsize=10, color='black', 
                                 ha='right', va='center')
 
+        if task_name != "type1":
+            ax_plot.axvline(6, color="black", linewidth=2)
 
         ax_plot.axvline(-4, color="black", linewidth=2)
-        ax_plot.axvline(6, color="black", linewidth=2)
+
+        ax_plot.set_xlim(-4, 6)
+        
+
         ax_plot.grid(False)
 
         for offset in np.linspace(-0.05, 0.05, 10):
@@ -260,7 +268,6 @@ def plot_results(metrics_table):
 
         ax_plot.set_yticks(y_positions)
         ax_plot.set_yticklabels([])
-        ax_plot.set_xlim(-4, 6)
         ax_plot.invert_yaxis()
 
         ax_label.set_yticks(y_positions)
@@ -277,7 +284,7 @@ def plot_results(metrics_table):
                        markersize=10, label=model_display_names[model_name])
             for model_name in model_colors.keys()
         ]
-        axes[0, 1].legend(handles=legend_elements, loc='center left', bbox_to_anchor=(0.38, 0.5), frameon=False)
+        axes[0, 1].legend(handles=legend_elements, loc='center left', bbox_to_anchor=(0.6, 0.5), frameon=False)
 
     plt.savefig("Figure4.png", bbox_inches='tight')
     plt.show()
