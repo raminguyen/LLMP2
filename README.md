@@ -8,7 +8,8 @@ We would like to investigate the answer by evaluating how Multimodal Large Langu
 To answer this research question, our study evaluates MLLMs' performance on graphical perception, inspired by two popular studies from Cleveland and McGrill, and Haehn et al. We incorporate our pretrained and fine-tuned MLLMs into our experiments. In particular, we compress fine-tuned models by training them on top of pretrained models, digging deep into their performance using efficient training configurations and scalable adaptation techniques to improve efficiency and save resources.
 
 
-You can view our data for our results here.
+You can view 👉 our [Paper](https://drive.google.com/file/d/12uLKhlkXZ3-sUfTrqWfe1lOxquuHLQnO/view?usp=sharing) | [Supplemental](https://drive.google.com/file/d/10WA57-q8J54fAeJK_gTIu8SVfUedoxW_/view?usp=drive_link) | [Fast Forward](https://www.canva.com/design/DAGW1b6D2iI/CKvycw1drnIynkazkyo3jQ/edit?utm_content=DAGW1b6D2iI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | [Results](https://github.com/raminguyen/LLMP2/tree/main/Allresults) | [User Study](https://www.dropbox.com/scl/fo/785yzdfowdsp676r45sb8/AFLYiQyKvJ46PQOgiP0f1hY/USERSTUDY?rlkey=y53d35aztwvakpprstz04s4hj&e=1&subfolder_nav_tracking=1&dl=0) 👈
+
 
 ## Quick Intro
 Multimodal Large Language Models (MLLMs) have remarkably progressed in analyzing and understanding images. Despite these advancements, accurately regressing values in charts remains an underexplored area for MLLMs.
@@ -29,7 +30,7 @@ We recreated stimuli for five experiments based on Cleveland and McGill’s foun
 ![image](https://github.com/raminguyen/LLMP2/blob/main/Demo.png)
 
 
-## What are the special features of our study?
+## What are the unique features of our study?
 We integrated the most advanced packages into our study:
 - Pytorch
 - Pytorch Lighting
