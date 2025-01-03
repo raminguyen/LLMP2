@@ -22,24 +22,17 @@ We also produced 15 fine-tuned MLLMs (each experiment has three fine-tuned MLLMs
 
 ![image](https://github.com/raminguyen/LLMP2/blob/main/Our%20Work%20%26%20Technology.png)
 
-# Fine-Tuned Models
-
 Feel free to access our fine-tuned models below:
 
-# Fine-Tuned Models
+EXP1: [Model 1](https://huggingface.co/raminguyen/finetuning-exp1-numberone) | [Model 2](https://huggingface.co/raminguyen/finetuning-exp1-numbertwo) | [Model 3](https://huggingface.co/raminguyen/finetuning-exp1-numberthree)
 
-Feel free to access our fine-tuned models below:
+EXP2: [Model 1](https://huggingface.co/raminguyen/finetuning-exp2-numberone) | [Model 2](https://huggingface.co/raminguyen/finetuning-exp2-numbertwo) | [Model 3](https://huggingface.co/raminguyen/finetuning-exp2-numberthree)
 
-## EXP1: [Model 1](https://huggingface.co/raminguyen/finetuning-exp1-numberone) | [Model 2](https://huggingface.co/raminguyen/finetuning-exp1-numbertwo) | [Model 3](https://huggingface.co/raminguyen/finetuning-exp1-numberthree)
+EXP3: [Model 1](https://huggingface.co/raminguyen/finetuning-exp3-numberone) | [Model 2](https://huggingface.co/raminguyen/finetuning-exp3-numbertwo) | [Model 3](https://huggingface.co/raminguyen/finetuning-exp3-numberthree)
 
-## EXP2: [Model 1](https://huggingface.co/raminguyen/finetuning-exp2-numberone) | [Model 2](https://huggingface.co/raminguyen/finetuning-exp2-numbertwo) | [Model 3](https://huggingface.co/raminguyen/finetuning-exp2-numberthree)
+EXP4: [Model 1](https://huggingface.co/raminguyen/finetuning-exp4-numberone) | [Model 2](https://huggingface.co/raminguyen/finetuning-exp4-numbertwo) | [Model 3](https://huggingface.co/raminguyen/finetuning-exp4-numberthree)
 
-## EXP3: [Model 1](https://huggingface.co/raminguyen/finetuning-exp3-numberone) | [Model 2](https://huggingface.co/raminguyen/finetuning-exp3-numbertwo) | [Model 3](https://huggingface.co/raminguyen/finetuning-exp3-numberthree)
-
-## EXP4: [Model 1](https://huggingface.co/raminguyen/finetuning-exp4-numberone) | [Model 2](https://huggingface.co/raminguyen/finetuning-exp4-numbertwo) | [Model 3](https://huggingface.co/raminguyen/finetuning-exp4-numberthree)
-
-## EXP5: [Model 1](https://huggingface.co/raminguyen/finetuning-exp5-numberone) | [Model 2](https://huggingface.co/raminguyen/finetuning-exp5-numbertwo) | [Model 3](https://huggingface.co/raminguyen/finetuning-exp5-numberthree)
-
+EXP5: [Model 1](https://huggingface.co/raminguyen/finetuning-exp5-numberone) | [Model 2](https://huggingface.co/raminguyen/finetuning-exp5-numbertwo) | [Model 3](https://huggingface.co/raminguyen/finetuning-exp5-numberthree)
 
 ## 🟢 What is our direction for this study?
 Our study compares the performance of fine-tuned and pretrained models to see which models perform better. We also desire to understand where aspects of MLLMs succeed or fail in the data visualization fields.
