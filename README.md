@@ -105,3 +105,8 @@ We would like to thank:
 
 We have also learned a great deal from this project, spanning #programming, #datavisualization, #imageprocessing, #machinelearning, and #computergraphics, and applied these insights to our study. Most importantly, we all contributed to this CS460 - Computer Graphics project at the University of Massachusetts Boston. Here's the link to the course website: [CS460.org](https://cs460.org/).
 
+---
+
+Any questions? Cool - let's discuss it with me now 🟢 
+
+[Visit my LinkedIn Profile](http://www.linkedin.com/in/rami-huu-nguyen/) | [Send me an Email](mailto:rami.nguyen12@gmail.com) | [View My Resume](https://docs.google.com/document/d/17-sjbPCVa1Z0SxOfZr4kHi3VOdJCSIz9GOS6SBeSgUg/edit?usp=sharing)
