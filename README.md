@@ -11,7 +11,6 @@ To answer this research question, our study evaluates MLLMs' performance on grap
 You can view 👉 our [Paper](https://drive.google.com/file/d/12uLKhlkXZ3-sUfTrqWfe1lOxquuHLQnO/view?usp=sharing) | [Supplemental](https://drive.google.com/file/d/10WA57-q8J54fAeJK_gTIu8SVfUedoxW_/view?usp=drive_link) | [Fast Forward](https://www.canva.com/design/DAGW1b6D2iI/CKvycw1drnIynkazkyo3jQ/edit?utm_content=DAGW1b6D2iI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | [Video](https://drive.google.com/file/d/1MUvHDMCOp5yFJ3kWQTDBmhIQe1vvfF0m/view) | [Results](https://github.com/raminguyen/LLMP2/tree/main/Allresults) | [User Study](https://www.dropbox.com/scl/fo/785yzdfowdsp676r45sb8/AFLYiQyKvJ46PQOgiP0f1hY/USERSTUDY?rlkey=y53d35aztwvakpprstz04s4hj&e=1&subfolder_nav_tracking=1&dl=0) 👈
 
 
-
 ## Quick Intro
 Multimodal Large Language Models (MLLMs) have remarkably progressed in analyzing and understanding images. Despite these advancements, accurately regressing values in charts remains an underexplored area for MLLMs.
 
@@ -22,6 +21,25 @@ We used the latest Multimodal Large Language Models technology, such as GPT-4o, 
 We also produced 15 fine-tuned MLLMs (each experiment has three fine-tuned MLLMs) for this study, and built on top of Llama 3.2 Vision.
 
 ![image](https://github.com/raminguyen/LLMP2/blob/main/Our%20Work%20%26%20Technology.png)
+
+# Fine-Tuned Models
+
+Feel free to access our fine-tuned models below:
+
+# Fine-Tuned Models
+
+Feel free to access our fine-tuned models below:
+
+## EXP1: [Model 1](https://huggingface.co/raminguyen/finetuning-exp1-numberone) | [Model 2](https://huggingface.co/raminguyen/finetuning-exp1-numbertwo) | [Model 3](https://huggingface.co/raminguyen/finetuning-exp1-numberthree)
+
+## EXP2: [Model 1](https://huggingface.co/raminguyen/finetuning-exp2-numberone) | [Model 2](https://huggingface.co/raminguyen/finetuning-exp2-numbertwo) | [Model 3](https://huggingface.co/raminguyen/finetuning-exp2-numberthree)
+
+## EXP3: [Model 1](https://huggingface.co/raminguyen/finetuning-exp3-numberone) | [Model 2](https://huggingface.co/raminguyen/finetuning-exp3-numbertwo) | [Model 3](https://huggingface.co/raminguyen/finetuning-exp3-numberthree)
+
+## EXP4: [Model 1](https://huggingface.co/raminguyen/finetuning-exp4-numberone) | [Model 2](https://huggingface.co/raminguyen/finetuning-exp4-numbertwo) | [Model 3](https://huggingface.co/raminguyen/finetuning-exp4-numberthree)
+
+## EXP5: [Model 1](https://huggingface.co/raminguyen/finetuning-exp5-numberone) | [Model 2](https://huggingface.co/raminguyen/finetuning-exp5-numbertwo) | [Model 3](https://huggingface.co/raminguyen/finetuning-exp5-numberthree)
+
 
 ## 🟢 What is our direction for this study?
 Our study compares the performance of fine-tuned and pretrained models to see which models perform better. We also desire to understand where aspects of MLLMs succeed or fail in the data visualization fields.
