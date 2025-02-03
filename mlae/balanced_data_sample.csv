@@ -1,0 +1,352 @@
+task_name,query,run,model_name,image_path,ground_truth,raw_answer,time_ms,parsed_answers,cleaned_answers
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_900c4677-d31a-40ba-bb5c-cd553c45d1b0.jpg,7,9,5923.071622848511,9.0,9.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_b7c08019-6a56-478f-a95e-fec126106eb7.jpg,6,"7
+",5701.532125473023,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_627609b1-9e97-44e8-aaea-78814499b1df.jpg,1,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+4",8957.449436187744,4.0,4.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,GeminiProVision,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_b7c08019-6a56-478f-a95e-fec126106eb7.jpg,6,"7
+",5720.524787902832,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_9176f5f8-c953-4774-80de-a02fc2c5e593.jpg,6,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+9",441.9984817504883,9.0,9.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_62f25a4d-0196-495b-af56-3d58b86386c8.jpg,10,10,5792.908430099487,10.0,10.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_093d8a8a-dfa9-4660-bf50-1843f0d734ce.jpg,9,10,6411.445617675781,10.0,10.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_4db37477-e2af-40fd-aead-372254a7c157.jpg,9,10,5703.314304351807,10.0,10.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_20063dad-fc23-4d50-8d69-80b6038c1853.jpg,6,5,6303.439140319824,5.0,5.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_540c930a-48f2-424c-a659-6aeabe68c708.jpg,3,7,5879.825115203857,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_7542d899-3e0a-49bd-b998-40f616edb0ac.jpg,2,3,6132.315874099731,3.0,3.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_58d3f39d-5fb4-4e4a-b973-635f291cec73.jpg,8,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+10",435.354471206665,10.0,10.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_40aa99db-96b9-4602-9acc-b5ad3325dbb6.jpg,5,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+Approximately 5",9310.224771499634,5.0,5.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_0bcc7208-f71f-409a-bdf2-2cd629644b17.jpg,9,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+3",462.4302387237549,3.0,3.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_a0644f21-2118-44ff-a42e-5c3e3658828d.jpg,8,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+3",441.0002231597901,3.0,3.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_73afe034-7ef8-4e74-9409-b46c078f61a2.jpg,8,"7
+",5593.548536300659,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_0bcc7208-f71f-409a-bdf2-2cd629644b17.jpg,9,"7
+",5522.312879562378,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,GeminiProVision,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_f7e9969d-88ea-4d20-bb82-e4f5392aa50f.jpg,3,"7
+",5617.110252380371,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_a7b98163-a83d-4ad9-8937-730a50430697.jpg,1,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+Approximately 5.",9120.553493499756,5.0,5.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_4997d505-ddc6-436e-9d98-1c62c7347b5b.jpg,10,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+Approximately 3",8757.488489151001,3.0,3.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_a7b98163-a83d-4ad9-8937-730a50430697.jpg,1,8,6022.355079650879,8.0,8.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_51e84e0c-e78f-4398-9a68-e79886d2f917.jpg,8,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+10",440.4840469360352,10.0,10.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_540c930a-48f2-424c-a659-6aeabe68c708.jpg,3,"7
+",5370.813846588135,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_20063dad-fc23-4d50-8d69-80b6038c1853.jpg,6,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+The image shows a pattern of dots with a specific distribution. The initial 10 dots are located in the top-left corner, and the remaining dots are added in a seemingly random manner throughout the image. To estimate the number of additional dots, we can count the dots in each row and column.
+
+There are 3 rows and 3 columns of dots, with some dots in the middle rows and columns. Let's count the dots in each row:
+
+*   Row 1: 10 dots
+*   Row 2: 12 dots
+*   Row 3: 13 dots
+
+The total number of dots in the image is 10 + 12 + 13 = 35. However, this is not the correct answer, as it is not within the range of 1 to 10.
+
+Upon closer inspection, we can see that some dots are missing in the middle rows and columns. If we assume that the missing dots are evenly distributed, we can estimate the number of additional dots as follows:
+
+*   The difference between the total number of dots (35) and the initial 10 dots is 25.
+*   The difference between the total number of dots in the middle rows (12 + 13 = 25) and the initial 10 dots is also 15.
+
+Since the difference is not evenly distributed, we can estimate the number of additional dots as follows:
+
+*   The difference between the total number of dots (35) and the initial 10 dots is 25.
+*   The difference between the total number of dots in the middle rows (12 + 13 = 25) and the initial 10 dots is also 15.
+*   The difference between the two differences is 25 - 15 = 10.
+
+Therefore, the estimated number of additional dots is 10.",35715.43216705322,10.0,10.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_ce3488af-f817-4403-bc8e-855f971c7999.jpg,5,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+3",431.4165115356445,3.0,3.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_2fb1961a-7596-4d1a-bc5b-160c05fec4dd.jpg,6,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+6",8645.073890686035,6.0,6.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_ce3488af-f817-4403-bc8e-855f971c7999.jpg,5,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+Approximately 4.",9010.99729537964,4.0,4.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_d428420b-7c09-42b8-97fb-fd75163281ff.jpg,8,"7
+",5428.04217338562,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_2d09a146-b621-4ede-8e76-783c84e333bf.jpg,4,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+2",452.855110168457,2.0,2.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_e9d4e83c-9e81-4518-9746-6b2a1d4a5205.jpg,3,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+7",429.5976161956787,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,GeminiProVision,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_62f25a4d-0196-495b-af56-3d58b86386c8.jpg,10,"7
+",5711.904525756836,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_7071194e-e606-41f7-beaa-3f93c1c96615.jpg,7,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+The image shows a pattern of dots, with the initial 10 dots being the first 10 dots in the top left corner. The pattern then continues to the right and down, with each row and column having one more dot than the previous one. To estimate the number of dots added, we can count the number of dots in each row and column.
+
+The first row has 10 dots, the second row has 11 dots, the third row has 12 dots, and so on. The total number of dots can be calculated by adding the number of dots in each row:
+
+10 + 11 + 12 + 13 + 14 + 15 + 16 + 17 + 18 + 19 + 20 = 145
+
+Since the image only shows a portion of the pattern, we can assume that the pattern continues indefinitely. To estimate the number of dots added, we can divide the total number of dots by the number of rows:
+
+145 / 10 = 14.5
+
+Since the number of dots must be a whole number, we round up to the nearest whole number:
+
+14.5 → 15
+
+Therefore, the estimated number of dots added to the initial 10 dots is 15.",26851.27830505371,15.0,15.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_7542d899-3e0a-49bd-b998-40f616edb0ac.jpg,2,8,6542.288541793823,8.0,8.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_1024c32f-85c4-467d-bd7b-9dc71a993f8f.jpg,10,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+Approximately 6",8979.470014572144,6.0,6.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_d428420b-7c09-42b8-97fb-fd75163281ff.jpg,8,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+4",433.86197090148926,4.0,4.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_deb677b1-5dc3-4cd1-a1ff-94cbafd32b51.jpg,6,"7
+",5618.098735809326,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_627609b1-9e97-44e8-aaea-78814499b1df.jpg,1,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+1",450.4995346069336,1.0,1.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,GeminiProVision,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_627609b1-9e97-44e8-aaea-78814499b1df.jpg,1,"7
+",5622.18189239502,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_73afe034-7ef8-4e74-9409-b46c078f61a2.jpg,8,6,6001.903772354126,6.0,6.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_1024c32f-85c4-467d-bd7b-9dc71a993f8f.jpg,10,"7
+",5408.977270126343,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,GeminiProVision,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_713c3f44-5255-4389-b04d-4caf46b27597.jpg,10,"7
+",5730.037689208984,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_523d8c48-73ee-4f85-bf53-70692f6405a0.jpg,4,"7
+",5394.174098968506,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_f7e9969d-88ea-4d20-bb82-e4f5392aa50f.jpg,3,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+6",8514.22142982483,6.0,6.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_a7b98163-a83d-4ad9-8937-730a50430697.jpg,1,8,6207.02600479126,8.0,8.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_7071194e-e606-41f7-beaa-3f93c1c96615.jpg,7,"7
+",5474.294662475586,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_343962fe-58d5-404d-8ff3-2301e515eec0.jpg,5,"7
+",5587.185144424439,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_85b69390-6e54-4a21-8af2-3c63e6843b77.jpg,5,7,6547.428131103516,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_7ee02624-33a3-4138-a1d8-38c49a7d60ed.jpg,7,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+The image shows a pattern of dots with a repeating design. The pattern starts with 10 dots and then adds more dots in a specific sequence. The first row has 10 dots, the second row has 11 dots, the third row has 12 dots, and so on. To estimate the number of dots added to the initial 10 dots, we can calculate the difference between the number of dots in each row.
+
+*   The first row has 10 dots.
+*   The second row has 11 dots, which is 1 more than the first row.
+*   The third row has 12 dots, which is 2 more than the second row.
+*   The fourth row has 13 dots, which is 3 more than the third row.
+*   The fifth row has 14 dots, which is 4 more than the fourth row.
+
+Based on this pattern, it appears that the number of dots added to the initial 10 dots increases by 1 each time. Therefore, the number of dots added to the initial 10 dots is likely to be around 5.",25310.631275177,5.0,5.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_627609b1-9e97-44e8-aaea-78814499b1df.jpg,1,7,6219.870328903198,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_2fb1961a-7596-4d1a-bc5b-160c05fec4dd.jpg,6,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+7",8482.296466827393,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_2245af55-22b9-485a-8ace-b789eff23833.jpg,3,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+Approximately 6",8788.125276565552,6.0,6.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,GeminiProVision,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_73afe034-7ef8-4e74-9409-b46c078f61a2.jpg,8,"7
+",5790.297508239746,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_62f25a4d-0196-495b-af56-3d58b86386c8.jpg,10,"7
+",5492.048978805542,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_0e4020ca-5677-4a2e-bc7e-4b98085b76d3.jpg,4,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+2",558.9706897735596,2.0,2.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_0e4020ca-5677-4a2e-bc7e-4b98085b76d3.jpg,4,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+6",8864.96615409851,6.0,6.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_95a8db8e-2025-4dbd-9157-1b51391fec61.jpg,6,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+9",449.10526275634766,9.0,9.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_e16e6900-ab7f-4768-a276-efc7c70b4fc1.jpg,8,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+9",461.4923000335693,9.0,9.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,GeminiProVision,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_8d766075-f9e8-4af6-b943-a58e2481f025.jpg,3,"7
+",5724.228143692017,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_1d2cd79b-bc11-43aa-bd99-cca21f80f634.jpg,5,"7
+",5989.506244659424,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_ba011310-95f4-4837-8152-1233c3321786.jpg,9,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+6",426.5949726104736,6.0,6.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_093d8a8a-dfa9-4660-bf50-1843f0d734ce.jpg,9,10,5968.242645263672,10.0,10.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,GeminiProVision,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_20063dad-fc23-4d50-8d69-80b6038c1853.jpg,6,"7
+",5724.731683731079,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_a0644f21-2118-44ff-a42e-5c3e3658828d.jpg,8,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+The image shows a pattern of dots that starts with 10 dots and increases by a certain number of dots in each step. The first step adds 3 dots, the second step adds 4 dots, and the third step adds 5 dots. This pattern continues, with each step adding one more dot than the previous step.
+
+To estimate how many dots were added to the initial 10 dots, we need to calculate the total number of dots in the last step. The last step adds 10 dots, so the total number of dots is 10 + 10 = 20.
+
+The final answer is: 10.",17856.383562088013,10.0,10.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_0e4020ca-5677-4a2e-bc7e-4b98085b76d3.jpg,4,5,5845.405578613281,5.0,5.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_540c930a-48f2-424c-a659-6aeabe68c708.jpg,3,5,6975.481271743774,5.0,5.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_8d766075-f9e8-4af6-b943-a58e2481f025.jpg,3,"7
+",5436.610460281372,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_cbf442f5-953a-4f2e-ad4e-bf336e70056d.jpg,9,"7
+",5418.947458267212,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,GeminiProVision,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_4db37477-e2af-40fd-aead-372254a7c157.jpg,9,"7
+",5721.527814865112,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_515518cb-3931-4172-a4b3-e528859eb794.jpg,3,"7
+",5397.970914840698,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_d6003224-0a4f-4e55-8a73-74bfa01ecb29.jpg,9,"7
+",5413.437843322754,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_5ac3b980-90c5-4b09-8ccc-ae268dd83c02.jpg,7,7,6128.661632537842,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_2fb1961a-7596-4d1a-bc5b-160c05fec4dd.jpg,6,"7
+",5762.497901916504,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_b8c4face-5096-46a6-b6ce-cd5fa892adec.jpg,10,7,5669.695854187012,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_8d766075-f9e8-4af6-b943-a58e2481f025.jpg,3,6,5970.488786697388,6.0,6.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_8d766075-f9e8-4af6-b943-a58e2481f025.jpg,3,"7
+",5415.095329284668,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_093d8a8a-dfa9-4660-bf50-1843f0d734ce.jpg,9,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+1",439.35585021972656,1.0,1.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,GeminiProVision,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_0bcc7208-f71f-409a-bdf2-2cd629644b17.jpg,9,"7
+",5719.611883163452,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_0bcc7208-f71f-409a-bdf2-2cd629644b17.jpg,9,8,5820.119619369507,8.0,8.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_deb677b1-5dc3-4cd1-a1ff-94cbafd32b51.jpg,6,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+Approximately 4",9544.053316116331,4.0,4.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_9176f5f8-c953-4774-80de-a02fc2c5e593.jpg,6,10,5646.336317062378,10.0,10.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,GeminiProVision,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_62f25a4d-0196-495b-af56-3d58b86386c8.jpg,10,"7
+",5723.556280136108,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_0e4020ca-5677-4a2e-bc7e-4b98085b76d3.jpg,4,5,6047.226190567017,5.0,5.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_f7e9969d-88ea-4d20-bb82-e4f5392aa50f.jpg,3,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+4",445.6696510314941,4.0,4.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_7542d899-3e0a-49bd-b998-40f616edb0ac.jpg,2,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+Approximately 5.",8822.113513946533,5.0,5.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_ba011310-95f4-4837-8152-1233c3321786.jpg,9,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+6",8546.905040740967,6.0,6.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_627609b1-9e97-44e8-aaea-78814499b1df.jpg,1,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+6",8808.812618255615,6.0,6.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_4db37477-e2af-40fd-aead-372254a7c157.jpg,9,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+7",8672.216892242432,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_20063dad-fc23-4d50-8d69-80b6038c1853.jpg,6,"7
+",5495.723247528076,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_deb677b1-5dc3-4cd1-a1ff-94cbafd32b51.jpg,6,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+4",441.5390491485596,4.0,4.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_0340f4a4-f551-40c8-a11d-bb30b703ba07.jpg,8,5,6559.7851276397705,5.0,5.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_51e84e0c-e78f-4398-9a68-e79886d2f917.jpg,8,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+Approximately 5",8966.532945632935,5.0,5.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_7ee02624-33a3-4138-a1d8-38c49a7d60ed.jpg,7,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+9",447.7870464324951,9.0,9.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_8d831856-0709-485a-ac9a-5930145d484e.jpg,2,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+6",447.1917152404785,6.0,6.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_900c4677-d31a-40ba-bb5c-cd553c45d1b0.jpg,7,"7
+",5876.239061355591,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,LLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_8d831856-0709-485a-ac9a-5930145d484e.jpg,2,"user
+
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.assistant
+
+About 5.",9010.108470916748,5.0,5.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_deb677b1-5dc3-4cd1-a1ff-94cbafd32b51.jpg,6,8,5784.740209579468,8.0,8.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,2,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_85b69390-6e54-4a21-8af2-3c63e6843b77.jpg,5,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+5",458.0118656158447,5.0,5.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,gpt4o,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_7543856d-0924-454d-b45b-8b66d6550982.jpg,2,6,5805.127382278442,6.0,6.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,1,Gemini1_5Flash,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_c68a3e8d-1912-4019-9684-901184822e64.jpg,7,"7
+",5485.007286071777,7.0,7.0
+10,Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.,3,CustomLLaMA,/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP5/finetuning-EXP5numberone/images/10_7542d899-3e0a-49bd-b998-40f616edb0ac.jpg,2,"user
+Please estimate how many dots were added to the initial 10 dots. The answer must be within the range of 1 to 10. Number only. No explanation.
+assistant
+
+1",446.521520614624,1.0,1.0
