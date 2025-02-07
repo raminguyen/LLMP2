@@ -1,16 +1,9 @@
 import pandas as pd
-
-
 import pandas as pd
 import numpy as np
 import sklearn.metrics as metrics
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-
-
-balanced_df = pd.read_csv('balanceddata.csv')
-
-#balanced_df.info()
 
 
 def uniqueallmodels(df):
@@ -68,7 +61,7 @@ def display_one_image(image_path):
     img = mpimg.imread(image_path)
     
     # Create a figure
-    plt.figure(figsize=(8, 6))
+    plt.figure(figsize=(4, 2), dpi=200)
     
     # Display image
     plt.imshow(img)
