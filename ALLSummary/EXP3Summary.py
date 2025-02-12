@@ -286,7 +286,7 @@ def plot_results(metrics_table):
         ]
         axes[0, 1].legend(handles=legend_elements, loc='center left', bbox_to_anchor=(0.6, 0.5), frameon=False)
 
-    plt.savefig("Figure4.png", bbox_inches='tight')
+    plt.savefig("Figure4.png", bbox_inches='tight', dpi=300)
     plt.show()
 
 

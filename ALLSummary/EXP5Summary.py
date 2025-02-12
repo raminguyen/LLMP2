@@ -348,7 +348,7 @@ def plot_results(metrics_table):
         ]
         axes[0, 1].legend(handles=legend_elements, loc='center left', bbox_to_anchor=(0.7, 0.5), frameon=False)
     
-    plt.savefig("Figure6.png",bbox_inches='tight')
+    plt.savefig("Figure6.png",bbox_inches='tight', dpi=300)
 
     plt.show()
 
@@ -693,7 +693,8 @@ def check_combined_unique_answers(balanced_dataframes):
     plt.savefig('analysisexp5.png', 
         bbox_inches='tight', 
         format='png',
-        transparent=False)
+        transparent=False,
+        dpi =300)
 
     plt.show()
 

@@ -23,8 +23,8 @@ def clean_raw_answers(file_path):
     # Read the CSV file
     df = pd.read_csv(file_path)
 
-    print("DataFrame columns:", df.columns)
-    print("\nFirst few rows of raw_answer column:")
+    #print("DataFrame columns:", df.columns)
+    #print("\nFirst few rows of raw_answer column:")
 
     def extract_digits_exp1(raw_text):
         """checkdeletedrows_forallcsv
@@ -102,6 +102,8 @@ def calculate_metrics(df_volume, df_area, df_direction, df_length, df_position_c
     # Dictionary to store metrics for each dataset
     metrics_summary = {}
 
+    mlae_data = {'Model': [], 'Dataset': [], 'MLAE': []}
+
     dataframes = {
         'volume': df_volume,
         'area' : df_area,
@@ -140,6 +142,11 @@ def calculate_metrics(df_volume, df_area, df_direction, df_length, df_position_c
                     [row['cleaned_answers_num']]
                 ) + 0.125)
                 mlae_values.append(mlae)
+
+                # Store individual MLAE values for ANOVA
+                mlae_data['Model'].append(model_name)
+                mlae_data['Dataset'].append(df_name)
+                mlae_data['MLAE'].append(mlae)
                 
                 # Calculate MAE
                 mae = mean_absolute_error(
@@ -176,6 +183,8 @@ def calculate_metrics(df_volume, df_area, df_direction, df_length, df_position_c
         if model_metrics:
             metrics_summary[df_name] = model_metrics
 
+        mlae_df = pd.DataFrame(mlae_data)
+
     metrics_table = pd.DataFrame([
         metrics 
         for dataset_metrics in metrics_summary.values() 
@@ -185,7 +194,7 @@ def calculate_metrics(df_volume, df_area, df_direction, df_length, df_position_c
     if not metrics_table.empty:
         metrics_table = metrics_table.sort_values(['Dataset', 'Average MLAE'])
     
-    return metrics_table
+    return metrics_table, mlae_df
 
 def plot_results(metrics_table):
     """
@@ -257,10 +266,9 @@ def plot_results(metrics_table):
     num_tasks = len(summary_stats_by_task)
 
 
-    fig, axes = plt.subplots(num_tasks, 3, figsize=(8, 1.5 * num_tasks), 
+    fig, axes = plt.subplots(num_tasks, 3, figsize=(8, 1.3 * num_tasks), 
                         gridspec_kw={'width_ratios': [1, 4, 1]}, sharex=False)
-    
-    fig.subplots_adjust(hspace=0.6, left=0.1, right=0.75, top=0.90, bottom=0.05)
+
 
 
     fig.patch.set_facecolor('white')
@@ -315,8 +323,10 @@ def plot_results(metrics_table):
                            capsize=5, capthick=1.5,
                            markersize=7, label='Human' if i == 0 else None)
 
-        ax_plot.axvline(-4, color="black", linewidth=1)
-        ax_plot.axvline(20, color="black", linewidth=1)
+        ax_plot.axvline(-5, color="black", linewidth=1)
+        
+        if task_name != "position_common_scale":
+            ax_plot.axvline(20, color="black", linewidth=1)
         ax_plot.grid(False)
 
         for offset in np.linspace(-0.05, 0.05, 10):
@@ -329,7 +339,7 @@ def plot_results(metrics_table):
 
         ax_plot.set_yticks(y_positions)
         ax_plot.set_yticklabels([])
-        ax_plot.set_xlim(-4, 20)
+        ax_plot.set_xlim(-5, 20)
         ax_plot.invert_yaxis()
 
         ax_label.set_yticks(y_positions)
@@ -348,7 +358,8 @@ def plot_results(metrics_table):
         ]
         axes[0, 1].legend(handles=legend_elements, loc='center left', bbox_to_anchor=(0.5, 0.5), frameon=False)
 
-    plt.savefig("Figure2.png", bbox_inches='tight')
+
+    plt.savefig("Figure2.png", bbox_inches='tight', dpi=300)
     plt.show()
    
 def process_plot(metrics_table):
@@ -416,12 +427,20 @@ def average_metrics(metrics_list):
     return averaged_metrics
 
 def balance_datasets_exp1(df_volume, df_area, df_direction, df_length, df_position_common_scale,
-                         df_position_non_aligned_scale, df_angle, df_curvature, df_shading):
+                          df_position_non_aligned_scale, df_angle, df_curvature, df_shading):
     """
-    Balance all datasets to ensure each model has the same number of samples.
-    Returns a dictionary with balanced DataFrames, using the 'df_' prefix to match calculate_metrics parameters.
+    Balance all datasets so that each task DataFrame is sampled down to the global minimum number
+    of rows available across all tasks.
+    
+    Parameters:
+        df_volume, df_area, df_direction, df_length, df_position_common_scale,
+        df_position_non_aligned_scale, df_angle, df_curvature, df_shading:
+            The DataFrames for each task.
+    
+    Returns:
+        dict: A dictionary of balanced DataFrames.
     """
-    # Create dictionary of input DataFrames with the 'df_' prefix
+    # Create dictionary of input DataFrames
     datasets = {
         'df_volume': df_volume,
         'df_area': df_area,
@@ -433,47 +452,57 @@ def balance_datasets_exp1(df_volume, df_area, df_direction, df_length, df_positi
         'df_curvature': df_curvature,
         'df_shading': df_shading
     }
-    
+
     balanced_dfs = {}
     
-    # Find minimum number of samples per model across all datasets
-    min_samples = float('inf')
-    for df_name, df in datasets.items():
-        model_counts = df.groupby('model_name').size()
-        min_samples = min(min_samples, model_counts.min())
+    # Compute the global minimum number of rows among all datasets.
+    global_min_samples = min(df.shape[0] for df in datasets.values())
+    #print("Global minimum samples per task:", global_min_samples)
     
-    # Balance each dataset
+    # Balance each dataset by randomly sampling to the global minimum.
     for df_name, df in datasets.items():
-        balanced_df = pd.DataFrame()
-        for model_name, group in df.groupby('model_name'):
-            # Randomly sample the minimum number of rows for each model
-            sampled = group.sample(n=min_samples, random_state=42)
-            balanced_df = pd.concat([balanced_df, sampled])
-        
-        # Store the balanced DataFrame with the 'df_' prefix
-        balanced_dfs[df_name] = balanced_df
+        if len(df) > global_min_samples:
+            balanced_dfs[df_name] = df.sample(n=global_min_samples, random_state=42)
+        else:
+            balanced_dfs[df_name] = df.copy()  # if already at or below global_min_samples, use as is.
     
     return balanced_dfs
 
 
 def checkdeletedrows_forallcsv():
-    """Process and check deleted rows across all CSV files"""
+    """Process and check deleted rows across all CSV files, then re-sample each (file, task) group to exactly 812 rows."""
     file_paths = [
         '/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP1/finetuning-EXP1numberfour/EXP-Results/EXP1results55images.csv',
-        "/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP1/finetuning-EXP1numberfour/EXP-Results/EXP1results55images.csv",
+        '/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP1/finetuning-EXP1numberfive/EXP-Results/EXP1results55images.csv',
         '/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP1/finetuning-EXP1numbersix/EXP-Results/EXP1results55images.csv'
     ]
     
     all_deleted_dfs = []
     all_balanced_metrics = []
-    balanced_dataframes = []  # To store combined DataFrames across files
+    balanced_dataframes = []  # To store locally balanced DataFrames from each file
 
     for file_path in file_paths:
-        # Get the original DataFrames
-        df_volume, df_area, df_direction, df_length, df_position_common_scale, \
-        df_position_non_aligned_scale, df_angle, df_curvature, df_shading, deleted_rows = clean_raw_answers(file_path)
+        # Get the cleaned DataFrames for each task and the deleted rows
+        (df_volume, df_area, df_direction, df_length, df_position_common_scale, 
+         df_position_non_aligned_scale, df_angle, df_curvature, df_shading, deleted_rows) = clean_raw_answers(file_path)
         
-        # Store original lengths in a dictionary for reference
+        # Print counts for each task after cleaning
+        """
+        
+        print(f"\nAfter cleaning for file {os.path.basename(file_path)}:")
+        print(f"  volume: {len(df_volume)} rows")
+        print(f"  area: {len(df_area)} rows")
+        print(f"  direction: {len(df_direction)} rows")
+        print(f"  length: {len(df_length)} rows")
+        print(f"  position_common_scale: {len(df_position_common_scale)} rows")
+        print(f"  position_non_aligned_scale: {len(df_position_non_aligned_scale)} rows")
+        print(f"  angle: {len(df_angle)} rows")
+        print(f"  curvature: {len(df_curvature)} rows")
+        print(f"  shading: {len(df_shading)} rows")
+
+        """
+        
+        # Store original lengths for each task (after cleaning)
         original_lengths = {
             'df_volume': len(df_volume),
             'df_area': len(df_area),
@@ -486,45 +515,63 @@ def checkdeletedrows_forallcsv():
             'df_shading': len(df_shading)
         }
         
-        # Balance the datasets
+        # Balance the datasets locally (within this file)
         balanced_dfs = balance_datasets_exp1(
             df_volume, df_area, df_direction, df_length, df_position_common_scale,
             df_position_non_aligned_scale, df_angle, df_curvature, df_shading
         )
         
-        # Add a 'file' column to each balanced DataFrame for file identification
+        # Add a 'file' column and a 'task' column to each balanced DataFrame and collect them
         for task_name, df in balanced_dfs.items():
-            df['task'] = task_name  # Add task name
-            df['file'] = file_path.split('/')[-1]  # Add file name
-            balanced_dataframes.append(df)  # Collect for final concatenation
-
-        # Print comparison using the stored original lengths
-        for task_name, df in balanced_dfs.items():
-            print(f"Task {task_name}: Original={original_lengths[task_name]} -> Balanced={len(df)}")
-        print(f"Deleted rows: {len(deleted_rows)}")
+            df = df.copy()
+            df['task'] = task_name              # Add task name (e.g. 'df_volume')
+            df['file'] = os.path.basename(file_path)  # Add file name
+            balanced_dataframes.append(df)
         
-        # Calculate metrics
+        # Print comparison showing rows before and after local balancing
+        for task_name, df in balanced_dfs.items():
+            rows_dropped_for_balancing = original_lengths[task_name] - len(df)
+            #print(f"Task {task_name}: Original (after cleaning) = {original_lengths[task_name]} -> Balanced = {len(df)} (Dropped {rows_dropped_for_balancing} rows)")
+        
+        # Also, print how many rows were deleted during cleaning for this file
+        #print(f"Deleted rows (cleaning) for file {os.path.basename(file_path)}: {len(deleted_rows)}")
+        
+        # Calculate metrics for this file
         metrics_table = calculate_metrics(**balanced_dfs)
+        
         all_balanced_metrics.append(metrics_table)
 
-        # Only append to all_deleted_dfs if there are actually deleted rows
         if deleted_rows:
             deleted_df = pd.DataFrame(deleted_rows)[['raw_answer', 'model_name']]
-            deleted_df['file'] = file_path.split('/')[-1]
+            deleted_df['file'] = os.path.basename(file_path)
             all_deleted_dfs.append(deleted_df)
     
     # Combine all deleted rows if there are any
     if all_deleted_dfs:
         combined_deleted_df = pd.concat(all_deleted_dfs, ignore_index=True)
     else:
-        # Return an empty DataFrame with the expected columns if no deleted rows
         combined_deleted_df = pd.DataFrame(columns=['file', 'raw_answer', 'model_name'])
 
-    # Combine all balanced DataFrames into one DataFrame
-    balanced_dataframes = pd.concat(balanced_dataframes, ignore_index=True)
+    # Combine all locally balanced DataFrames
+    combined_balanced_df = pd.concat(balanced_dataframes, ignore_index=True)
+    
+    # Rebalance across files: re-sample each group (by file and task) to exactly 812 rows
+    desired_rows = 812
+    final_balanced_df = combined_balanced_df.groupby(['file', 'task'], group_keys=False).apply(
+        lambda grp: grp.sample(n=desired_rows, random_state=42) if len(grp) >= desired_rows else grp
+    )
 
-    # Return all results
-    return combined_deleted_df[['file', 'raw_answer', 'model_name']], all_balanced_metrics, balanced_dataframes
+    # Print final balance summary for each file and task
+    #print("\nFinal balanced row counts (after rebalancing to 812 rows per group):")
+    final_counts = final_balanced_df.groupby(['file', 'task']).size()
+    #print(final_counts)
+
+    # At this point, if every (file, task) group had at least 812 rows originally,
+    # final_balanced_df will have exactly 812 rows per (file, task) group.
+    # With three files, for each task you will have 3 * 812 rows in the final DataFrame.
+    
+    return combined_deleted_df[['file', 'raw_answer', 'model_name']], all_balanced_metrics, final_balanced_df
+
 
 def process_and_plot_multiplerun(all_balanced_metrics):
 
@@ -707,6 +754,7 @@ def visualize_cleaned_answers_overlay(balanced_dataframes):
     plt.savefig('analysisexp1.png', 
     bbox_inches='tight', 
     format='png',
+    dpi=300,
     transparent=False)
     plt.show()
 

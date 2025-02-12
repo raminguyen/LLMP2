@@ -11,7 +11,6 @@ from PIL import Image, ImageOps
 import ast
 
 
-
 def clean_raw_answers(file_path):
     """
     Clean raw answers from CSV file, focusing only on extracting digits.
@@ -394,7 +393,7 @@ def plot_results(metrics_table):
         ]
         axes[0, 1].legend(handles=legend_elements, loc='center left', bbox_to_anchor=(1, 0.5), frameon=False)
     
-    plt.savefig("Figure5.png",bbox_inches='tight')
+    plt.savefig("Figure5.png",bbox_inches='tight', dpi=300)
     plt.show()
 
 def process_plot(metrics_table):
@@ -531,6 +530,7 @@ def checkdeletedrows_forallcsv():
     all_deleted_dfs = []
     balanced_dataframes = []  # Store tuples of (df_framed, df_unframed)
     combined_framed_unframed = []  # List for combining framed and unframed data
+    all_balanced_metrics =[]
 
     for file_path in file_paths:
         # Clean and process raw answers
@@ -559,7 +559,7 @@ def checkdeletedrows_forallcsv():
         
         # Calculate metrics for balanced datasets
         metrics_table = calculate_metrics(df_framed, df_unframed)
-        all_balanced_metrics.append(metrics_table)
+        all_balanced_metrics = all_balanced_metrics.append(metrics_table)
         
         # Handle deleted rows
         if deleted_rows:
@@ -583,7 +583,7 @@ def checkdeletedrows_forallcsv():
         print("Warning: 'cleaned_answers' column not found in combined_balanced_df.")
 
     # Return all values
-    return combined_metrics, combined_deleted_df, balanced_dataframes
+    return combined_metrics, combined_deleted_df, balanced_dataframes, all_balanced_metrics
 
 
 def plot_multiplerun(metrics_table):
@@ -596,6 +596,7 @@ def plot_multiplerun(metrics_table):
     Returns:
         pd.DataFrame: Averaged metrics table
     """
+    #print(metrics_table)
     print("\nAveraged Metrics (Balanced Datasets):")
     
     # Convert the metrics_table DataFrame into a list with a single DataFrame
