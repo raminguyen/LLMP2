@@ -62,10 +62,10 @@ def process_model(model_name):
     return (
     (print("Absolute Errors:", abs_errors), abs_errors)[1],         # Absolute errors (difference between predictions and ground truth)
     (print("Absolute Errors (Real Scale):", abs_errors_real), abs_errors_real)[1],    # Absolute errors (real scale, without transformation)
-    (print("MLAE_1 per prediction (Original):", mlae_1_per_pred), mlae_1_per_pred)[1],    # MLAE (Original) per prediction
-    (print("MLAE_2 per prediction (Log Before Avg):", mlae_2_per_pred), mlae_2_per_pred)[1],    # MLAE_NEW (Log Before Avg) per prediction
-    (print("MLAE_3 per prediction (Real Scale):", mlae_3_per_pred), mlae_3_per_pred)[1],    # MLAE_RAMI (Real Scale) per prediction
-    (print("MLAE_4 per prediction (Haehn 2018):", mlae_4_per_pred), mlae_4_per_pred)[1],    # MLAE_OLD (Haehn 2018) per prediction
+    (print("MLAE_Orginal per prediction (Original):", mlae_1_per_pred), mlae_1_per_pred)[1],    # MLAE (Original) per prediction
+    (print("MLAE_NEW per prediction (Log Before Avg):", mlae_2_per_pred), mlae_2_per_pred)[1],    # MLAE_NEW (Log Before Avg) per prediction
+    (print("MLAE_RAMI per prediction (Real Scale):", mlae_3_per_pred), mlae_3_per_pred)[1],    # MLAE_RAMI (Real Scale) per prediction
+    (print("MLAE_OLD per prediction (Haehn 2018):", mlae_4_per_pred), mlae_4_per_pred)[1],    # MLAE_OLD (Haehn 2018) per prediction
 )
 
 
