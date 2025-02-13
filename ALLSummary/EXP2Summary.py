@@ -438,6 +438,8 @@ def balance_datasets(df_bar, df_pie, target_size=677):
     
     return df_bar_balanced, df_pie_balanced
 
+import pandas as pd
+
 def checkdeletedrows_forallcsv():
     """
     Process and check deleted rows across all CSV files for EXP2, 
@@ -445,8 +447,9 @@ def checkdeletedrows_forallcsv():
 
     Returns:
     combined_deleted_df (pd.DataFrame): Combined DataFrame of deleted rows.
-    balanced_dataframes (list): List of tuples containing (df_bar_balanced, df_pie_balanced).
+    balanced_df (pd.DataFrame): Single DataFrame containing all balanced data.
     metrics_table (pd.DataFrame): Combined DataFrame of metrics from all datasets.
+    all_balanced_metrics (list): List of individual metric DataFrames.
     """
     # List of file paths for EXP2
     file_paths = [
@@ -490,14 +493,21 @@ def checkdeletedrows_forallcsv():
             deleted_df['file'] = file_path.split('/')[-1]
             all_deleted_dfs.append(deleted_df)
 
+    # Convert list of tuples (df_bar_balanced, df_pie_balanced) into a single DataFrame
+    dataframe_list = [df for pair in balanced_dataframes for df in pair]  # Flatten list of tuples
+    balanced_df = pd.concat(dataframe_list, ignore_index=True) if dataframe_list else pd.DataFrame()
+
+    balanced_df.to_csv("finalEXP2", index=False)
+
     # Combine all metrics into a single DataFrame
     metrics_table = pd.concat(all_balanced_metrics, ignore_index=True) if all_balanced_metrics else pd.DataFrame()
 
     # Combine all deleted rows into a single DataFrame
     combined_deleted_df = pd.concat(all_deleted_dfs, ignore_index=True) if all_deleted_dfs else pd.DataFrame(columns=['file', 'raw_answer', 'model_name'])
 
-    # Return combined deleted rows, balanced dataframes, and combined metrics
-    return combined_deleted_df, balanced_dataframes, metrics_table, all_balanced_metrics
+    # Return combined deleted rows, the merged balanced DataFrame, and combined metrics
+    return combined_deleted_df, balanced_df, metrics_table, all_balanced_metrics
+
 
 def process_and_plot_multiplerun(metrics_table):
     print("\nAveraged Metrics (Balanced Datasets):")

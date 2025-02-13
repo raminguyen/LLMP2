@@ -482,46 +482,48 @@ def checkdeletedrows_forallcsv():
     all_deleted_dfs = []
     balanced_dataframes = []  
     
+    import pandas as pd
+
     for file_path in file_paths:
         df_type1, df_type2, df_type3, df_type4, df_type5, deleted_rows = clean_raw_answers(file_path)
+        
         print(f"\n📂 Processing: {file_path.split('/')[-1]}")
-        print(f"\nNumber of rows in each task:")
-        print(f"Task type1 rows: {len(df_type1)}")
-        print(f"Task type2 rows: {len(df_type2)}")
-        print(f"Task type3 rows: {len(df_type3)}")
-        print(f"Task type4 rows: {len(df_type4)}")
-        print(f"Task type5 rows: {len(df_type5)}")
+        print("\nNumber of rows in each task:")
+        for i, df in enumerate([df_type1, df_type2, df_type3, df_type4, df_type5], start=1):
+            print(f"Task type{i} rows: {len(df)}")
         
         # Balance datasets
         df_type1, df_type2, df_type3, df_type4, df_type5 = balance_datasets(
             df_type1, df_type2, df_type3, df_type4, df_type5
         )
 
-        # Store the balanced DataFrames for later use
+        # Store balanced DataFrames
         balanced_dataframes.append((df_type1, df_type2, df_type3, df_type4, df_type5))
 
         print("\nBalanced datasets:")
-        print(f"Task type1 balanced rows: {len(df_type1)}")
-        print(f"Task type2 balanced rows: {len(df_type2)}")
-        print(f"Task type3 balanced rows: {len(df_type3)}")
-        print(f"Task type4 balanced rows: {len(df_type4)}")
-        print(f"Task type5 balanced rows: {len(df_type5)}")
+        for i, df in enumerate([df_type1, df_type2, df_type3, df_type4, df_type5], start=1):
+            print(f"Task type{i} balanced rows: {len(df)}")
         
-        metrics_table = calculate_metrics(df_type1, df_type2, df_type3, df_type4, df_type5)
-        all_balanced_metrics.append(metrics_table)
+        # Store metrics
+        all_balanced_metrics.append(calculate_metrics(df_type1, df_type2, df_type3, df_type4, df_type5))
         
+        # Store deleted rows
         if deleted_rows:
             deleted_df = pd.DataFrame(deleted_rows)[['raw_answer', 'model_name']]
             deleted_df['file'] = file_path.split('/')[-1]
             all_deleted_dfs.append(deleted_df)
-    
-    # Combine metrics
+
+    # Convert balanced_dataframes to a single DataFrame and save
+    df_list = [df for tup in balanced_dataframes for df in tup]  
+    balanced_df = pd.concat(df_list, ignore_index=True) if df_list else pd.DataFrame()
+    balanced_df.to_csv("finalEXP3.csv", index=False)
+
+    # Combine metrics and deleted rows
     combined_metrics = pd.concat(all_balanced_metrics, ignore_index=True) if all_balanced_metrics else pd.DataFrame()
-    
     combined_deleted_df = pd.concat(all_deleted_dfs, ignore_index=True) if all_deleted_dfs else pd.DataFrame(columns=['file', 'raw_answer', 'model_name'])
 
-   
-    return combined_metrics, combined_deleted_df, balanced_dataframes
+    return combined_metrics, combined_deleted_df, balanced_df
+
 
 
 def plot_multiplerun(metrics_table):

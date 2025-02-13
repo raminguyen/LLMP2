@@ -481,6 +481,8 @@ def checkdeletedrows_forallcsv():
     all_balanced_metrics = []
     balanced_dataframes = []  # To store locally balanced DataFrames from each file
 
+    final_balanced_list = [] 
+
     for file_path in file_paths:
         # Get the cleaned DataFrames for each task and the deleted rows
         (df_volume, df_area, df_direction, df_length, df_position_common_scale, 
@@ -554,6 +556,7 @@ def checkdeletedrows_forallcsv():
 
     # Combine all locally balanced DataFrames
     combined_balanced_df = pd.concat(balanced_dataframes, ignore_index=True)
+
     
     # Rebalance across files: re-sample each group (by file and task) to exactly 812 rows
     desired_rows = 812
@@ -561,16 +564,27 @@ def checkdeletedrows_forallcsv():
         lambda grp: grp.sample(n=desired_rows, random_state=42) if len(grp) >= desired_rows else grp
     )
 
+    final_balanced_df = final_balanced_list.append(final_balanced_df)
+
+    # Merge all stored DataFrames
+    if final_balanced_list:
+        final_balanced_df = pd.concat(final_balanced_list, ignore_index=True)
+    else:
+        final_balanced_df = pd.DataFrame()  # Empty DataFrame if list is empty
+
     # Print final balance summary for each file and task
-    #print("\nFinal balanced row counts (after rebalancing to 812 rows per group):")
+    print("\nFinal balanced row counts (after rebalancing to 812 rows per group):")
     final_counts = final_balanced_df.groupby(['file', 'task']).size()
-    #print(final_counts)
+    print(final_counts)
+
+    final_balanced_df.to_csv("finalEXP1.csv", index=False)
 
     # At this point, if every (file, task) group had at least 812 rows originally,
     # final_balanced_df will have exactly 812 rows per (file, task) group.
     # With three files, for each task you will have 3 * 812 rows in the final DataFrame.
-    
-    return combined_deleted_df[['file', 'raw_answer', 'model_name']], all_balanced_metrics, final_balanced_df
+
+
+    return combined_deleted_df[['file', 'raw_answer', 'model_name']], all_balanced_metrics, balanced_dataframes
 
 
 def process_and_plot_multiplerun(all_balanced_metrics):

@@ -526,26 +526,27 @@ def checkdeletedrows_forallcsv():
         '/hpcstor6/scratch01/h/huuthanhvy.nguyen001/EXP4/finetuning-EXP4numberthree/EXP-Results/EXP4evaluate55images.csv'
     ]
     
-    all_balanced_metrics = []
-    all_deleted_dfs = []
+    all_balanced_metrics = []  # Store metrics for each file
+    all_deleted_dfs = []  # Store deleted rows
     balanced_dataframes = []  # Store tuples of (df_framed, df_unframed)
-    combined_framed_unframed = []  # List for combining framed and unframed data
-    all_balanced_metrics =[]
+    combined_framed_unframed = []  # Store all framed and unframed data
+
 
     for file_path in file_paths:
+        print(f"\n📂 Processing file: {file_path}")
+
         # Clean and process raw answers
         df_framed, df_unframed, deleted_rows = clean_raw_answers(file_path)
-        
-        print(f"\nProcessing file: {file_path}")
+
         print(f"Task framed rows: {len(df_framed)}")
         print(f"Task unframed rows: {len(df_unframed)}")
-        
+
         # Ensure 'cleaned_answers' column exists
-        if 'cleaned_answers' not in df_framed.columns or 'cleaned_answers' not in df_unframed.columns:
-            print("Warning: 'cleaned_answers' column not found. Adding an empty column.")
-            df_framed['cleaned_answers'] = None
-            df_unframed['cleaned_answers'] = None
-        
+        for df in [df_framed, df_unframed]:
+            if 'cleaned_answers' not in df.columns:
+                print("⚠️ Warning: 'cleaned_answers' column not found. Adding an empty column.")
+                df['cleaned_answers'] = None
+
         # Balance datasets
         df_framed, df_unframed = balance_datasets(df_framed, df_unframed)
 
@@ -556,34 +557,53 @@ def checkdeletedrows_forallcsv():
         df_framed['type'] = 'framed'
         df_unframed['type'] = 'unframed'
         combined_framed_unframed.append(pd.concat([df_framed, df_unframed], ignore_index=True))
-        
+
         # Calculate metrics for balanced datasets
         metrics_table = calculate_metrics(df_framed, df_unframed)
-        all_balanced_metrics = all_balanced_metrics.append(metrics_table)
-        
+        all_balanced_metrics.append(metrics_table)
+
         # Handle deleted rows
         if deleted_rows:
             deleted_df = pd.DataFrame(deleted_rows, columns=['raw_answer', 'model_name'])
             deleted_df['file'] = file_path.split('/')[-1]
             all_deleted_dfs.append(deleted_df)
-    
+
+    # ✅ Convert balanced_dataframes (list of tuples) to a single DataFrame
+    dataframe_list = [df for pair in balanced_dataframes for df in pair]  # Flatten list of tuples
+    balanced_df = pd.concat(dataframe_list, ignore_index=True) if dataframe_list else pd.DataFrame()
+
+    # ✅ Convert combined_framed_unframed (list of DataFrames) to a single DataFrame
+    combined_framed_unframed_df = pd.concat(combined_framed_unframed, ignore_index=True) if combined_framed_unframed else pd.DataFrame()
+
     # Combine metrics into a single DataFrame
     combined_metrics = pd.concat(all_balanced_metrics, ignore_index=True) if all_balanced_metrics else pd.DataFrame()
 
     # Combine deleted rows into a single DataFrame
     combined_deleted_df = pd.concat(all_deleted_dfs, ignore_index=True) if all_deleted_dfs else pd.DataFrame(columns=['file', 'raw_answer', 'model_name'])
 
-    # Combine all framed and unframed DataFrames into one
-    combined_balanced_df = pd.concat(combined_framed_unframed, ignore_index=True) if combined_framed_unframed else pd.DataFrame()
+    # ✅ Ensure 'cleaned_answers' is formatted correctly
+    if 'cleaned_answers' in balanced_df.columns:
+        balanced_df['cleaned_answers'] = (
+            balanced_df['cleaned_answers']
+            .astype(str)                           # Convert everything to string (to avoid NaN issues)
+            .str.replace(r'\n', '', regex=True)    # Remove newlines
+            .str.strip()                            # Trim spaces
+            .replace('', None)                      # Convert empty strings to None
+        )
 
-    # Convert 'cleaned_answers' to numeric, if it exists
-    if 'cleaned_answers' in combined_balanced_df.columns:
-        combined_balanced_df['cleaned_answers'] = pd.to_numeric(combined_balanced_df['cleaned_answers'], errors='coerce')
+        # Convert to numeric after cleaning
+        balanced_df['cleaned_answers'] = pd.to_numeric(balanced_df['cleaned_answers'], errors='coerce')
     else:
-        print("Warning: 'cleaned_answers' column not found in combined_balanced_df.")
+        print("⚠️ Warning: 'cleaned_answers' column not found in balanced_df.")
+
+    # ✅ Save the final cleaned dataset
+    balanced_df.to_excel("finalEXP4.xlsx", index=False)
+    print("\n✅ Final cleaned dataset saved as 'finalEXP4.csv'")
+
+    return combined_framed_unframed_df
 
     # Return all values
-    return combined_metrics, combined_deleted_df, balanced_dataframes, all_balanced_metrics
+    #combined_metrics, combined_deleted_df, balanced_df, all_balanced_metrics, combined_framed_unframed_df
 
 
 def plot_multiplerun(metrics_table):

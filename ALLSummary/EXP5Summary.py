@@ -499,7 +499,14 @@ def checkdeletedrows_forallcsv():
 
         # Store the balanced DataFrames for later use
         balanced_dataframes.append((df_10, df_100, df_1000))
-        
+    
+
+        # Flatten the list of tuples and merge all into one DataFrame
+        balanced_df = pd.concat([df for group in balanced_dataframes for df in group], ignore_index=True)
+
+        # Now you can save it to an Excel file
+        balanced_df.to_csv("finalEXP5.csv", index=False)
+
         print("\nBalanced datasets:")
         print(f"Task 10 samples balanced rows: {len(df_10)}")
         print(f"Task 100 samples balanced rows: {len(df_100)}")
@@ -525,7 +532,7 @@ def checkdeletedrows_forallcsv():
     else:
         combined_deleted_df = pd.DataFrame(columns=['file', 'raw_answer', 'model_name'])
 
-    return combined_metrics, balanced_dataframes, combined_deleted_df
+    #return combined_metrics, balanced_dataframes, combined_deleted_df
 
 
 def plot_multiplerun(metrics_table):
