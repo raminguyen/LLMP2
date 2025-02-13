@@ -21,7 +21,8 @@ class MLAEAnalyzer:
     def calculate_mlae_per_prediction(y_test, y_pred):
         """Computes per-prediction MLAE values."""
         abs_errors_100 = np.abs(np.multiply(y_pred, 100) - np.multiply(y_test, 100))
-        abs_errors_real = np.abs(y_pred - y_test)
+        abs_errors_100 = np.abs(np.multiply(y_pred, 100) - np.multiply(y_test, 100))
+
 
         mlae_1_per_pred = np.full_like(abs_errors_100, np.log2(sklearn.metrics.mean_absolute_error(np.multiply(y_pred, 100), np.multiply(y_test, 100)) + 0.125))
         mlae_2_per_pred = np.log2(abs_errors_100 + 0.125)
