@@ -126,15 +126,15 @@ def calculate_average_mlae_EXP2(df):
             
             data = data.copy()
 
-            # Convert 'ground_truth' and 'cleaned_answers' to numeric safely
+            # Safe function to evaluate values and handle tuples (ranges)
             def safe_eval(x):
                 try:
                     result = pd.eval(x) if isinstance(x, str) else x
-                    if isinstance(result, (list, np.ndarray)):  
-                        return result[0]  # Extract first value if it's a list/array
-                    return result
+                    if isinstance(result, (list, tuple, np.ndarray)):  
+                        return sum(result) / len(result)  # Take the average if it's a range
+                    return float(result)  # Convert to float for calculations
                 except:
-                    return np.nan  # Assign NaN if conversion fails
+                    return np.nan  # Keep NaN values if conversion fails
 
             data['ground_truth_num'] = data['ground_truth'].apply(safe_eval).astype(float)
 
