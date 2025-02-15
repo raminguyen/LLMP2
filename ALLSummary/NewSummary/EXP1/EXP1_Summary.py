@@ -11,11 +11,14 @@ EXP1 = pd.read_csv("/home/huuthanhvy.nguyen001/tmp/LLMP/ALLSummary/NewSummary/EX
 
 average_mlae = calculate_average_mlae_EXP1(EXP1)
 
-print(average_mlae)
+average_mlae
 
 plot_results(average_mlae)
 
 mlae_individual = calculate_mlae_individual_EXP1()
 
 perform_statistical_testing(mlae_individual)
+
+
+
 
