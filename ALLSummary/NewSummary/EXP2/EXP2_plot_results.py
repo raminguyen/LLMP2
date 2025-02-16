@@ -186,7 +186,7 @@ def plot_results(metrics_table):
                        markersize=10, label=model_display_names[model_name])
             for model_name in model_colors.keys()
         ]
-        axes[0, 1].legend(handles=legend_elements, loc='center left', bbox_to_anchor=(0.6, 0.5), frameon=False)
+        axes[0, 1].legend(handles=legend_elements, loc='center left', bbox_to_anchor=(0.65, 0.5), frameon=False)
 
     plt.savefig("Figure3.png",bbox_inches='tight', dpi=300)
     plt.show()
