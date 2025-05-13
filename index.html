@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 960px;
+      margin:0 auto;
+      padding: 100;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1, h2 {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #29ABE2;
+      font-weight: bold;
+      text-align: center;
+    }
+    .highlight {
+      color: #29ABE2;
+      font-weight: itatalic;
+    }
+    video, img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      margin: 20px 0;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      overflow-x: auto;
+      font-size: 0.9em;
+      font-family: Courier, monospace;
+    }
+    a {
+      color: #29ABE2;
+      text-decoration: none;
+    }
+    #container {
+      margin: 40px;
+    }
+
+
+
+    .autoscroll-container {
+  overflow: hidden;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.autoscroll-track {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  animation: bounce-slide 10s ease-in-out infinite alternate;
+  min-width: 1200px; /* make sure it's scrollable */
+}
+
+.img-original {
+  height: auto;
+  max-height: 300px;
+  border: 2px solid #29ABE2;
+}
+
+.img-square {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid #29ABE2;
+}
+
+@keyframes bounce-slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100px); /* Slide left */
+  }
+  100% {
+    transform: translateX(100px);  /* Bounce right */
+  }
+}
+
+
+
+  </style>
+</head>
+<body>
+  
+  <h1 style="text-align: center; font-size: 1.5em">Evaluating “Graphical Perception” with Multimodal Large Language Models</h1>
+
+
+  <p style="text-align:center; font-size: 1.2em; font-style: italic; color: gray;">
+    <strong>Rami Huu Nguyen | Kenichi Maeda | Mahsa Geshvadi | Daniel Haehn</strong>
+  </p>
+  
+
+  <p style="text-align:center";><em> Presented at IEEE Pacific Visualization Symposium (PacificVis) 2025</em> |
+    <a  href="https://your-paper-link.com" target="_blank"><em> 👉 View our Paper </em></a></p>
+
+  <h2>Abstract</h2>
+  <p>
+    Multimodal Large Language Models (MLLMs) have remarkably progressed in analyzing and understanding images.
+    Despite these advancements, accurately regressing values in charts remains an underexplored area for MLLMs.
+    For visualization, how do MLLMs perform when applied to graphical perception tasks?
+  </p>
+  <p>
+    Our paper investigates this question by reproducing Cleveland and McGill's seminal 1984 experiment and
+    comparing it against human task performance. Our study primarily evaluates fine-tuned and pretrained models
+    and zero-shot prompting to determine if they closely match human graphical perception.
+  </p>
+  <p>
+    Our findings highlight that MLLMs outperform human task performance in some cases but not in others.
+    We highlight the results of all experiments to foster an understanding of where MLLMs succeed and fail
+    when applied to data visualization.
+  </p>
+
+  <h2>Fast Forward Video</h2>
+
+  <video  style="border: 1px solid #29ABE2 width=1000px" controls>
+    <source src="images/Fast_forward_video.mp4" type="video/mp4" >
+  </video>
+
+  <h2>Poster</h2>
+
+
+  <img src="images/Poster.png" alt="IEEE 2025 Poster" style="border: 1px solid #29ABE2;width:1000px">
+
+  <h2 style="text-align: center;">Presentation Slides</h2>
+
+<div style="text-align: center;">
+  <iframe src="https://drive.google.com/file/d/15lpwE4YmZygUgPGSwJwizRFxWXaMeDtS/preview"
+          width="100%" height="600px" style="border: 1px solid #007BFF;" allow="autoplay"></iframe>
+</div>
+
+<p style="text-align: center; margin-top: 10px;">
+   Can’t view on your phone? 
+  <a href="https://drive.google.com/file/d/15lpwE4YmZygUgPGSwJwizRFxWXaMeDtS/view?usp=sharing" 
+     target="_blank" style="color: #007BFF;">
+     Tap here to open the PDF directly
+  </a>
+</p>
+
+
+  <h2 style="color: gray;"> View more our experiments</h2>
+
+  <div style="text-align: center; margin: 20px 0;">
+
+    <a href="https://github.com/raminguyen/LLMP2" target="_blank" style="margin: 0 15px; font-size: 1.5rem;"> GitHub</a> 🔵
+    
+   <a href="https://github.com/raminguyen/LLMP2/tree/main/Allresults" target="_blank" style="margin: 0 15px; font-size: 1.5rem;"> Results</a> 🔵
+
+   <a href="images/Supplemental.pdf" target="_blank" style="margin: 0 15px; font-size: 1.5rem;">Supplemental</a> 🔵
+
+   <a href="https://www.dropbox.com/scl/fo/785yzdfowdsp676r45sb8/AFLYiQyKvJ46PQOgiP0f1hY/USERSTUDY?dl=0&rlkey=y53d35aztwvakpprstz04s4hj&subfolder_nav_tracking=1" target="_blank" style="margin: 0 15px; font-size: 1.5rem;">User Study</a> 
+  
+  </div>
+
+  <h2 style="color: gray; text-align: center;">Our Snapshots</h2>
+
+  <div class="autoscroll-container">
+    <div class="autoscroll-track">
+  
+      <div style="text-align: center;">
+        <a href="https://ieeevis.tw/" target="_blank">
+          <img src="images/Kenichi_Maeda_IEEE PacificVis 2025 Taipei City, Taiwan.jpg" alt="IEEE PacificVis 2025 Taipei City, Taiwan" class="img-original">
+        </a>
+        <p style="color:#29ABE2; font-size: 1rem; margin-top: 10px;">
+          <a href="https://ieeevis.tw/" target="_blank" style="color: #29ABE2; text-decoration: none;">IEEE PacificVis 2025, Taiwan, Apr 24th, 2025</a>
+        </p>
+      </div>
+  
+      <div style="text-align: center;">
+        <a href="https://www.aifrontiers.org/" target="_blank">
+          <img src="images/Rami_Huu_Nguyen_AI Frontier Symposium.jpg" alt="AI Frontier Symposium May 9th, 2025" class="img-square">
+        </a>
+        <p style="color: #007BFF; font-size: 1rem; margin-top: 10px;">
+          <a href="https://www.aifrontiers.org/" target="_blank" style="color: #29ABE2; text-decoration: none;">AI Frontier Symposium, May 9, 2025</a>
+        </p>
+      </div>
+  
+      <div style="text-align: center;">
+        <a href="https://csmshowcase2025.org/" target="_blank">
+          <img src="images/pic3.jpg" alt="CSM Showcase May 16th, 2025" class="img-square">
+        </a>
+        <p style="color: #007BFF; font-size: 1rem; margin-top: 10px;">
+          <a href="https://csmshowcase2025.org/" target="_blank" style="color: #29ABE2; text-decoration: none;">CSM Showcase - May 16, 2025</a>
+        </p>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+  
+  
+
+<h2 style="color: gray;">Authors and Acknowledgement</h2>
+
+<p>
+  Connect with us, we are open to collaboration at:
+  <a href="mailto:rami@mpsych.org">rami@mpsych.org</a>
+</p>
+
+
+
+<p>
+  We would like to thank:
+</p>
+
+<ul>
+  <li><strong>Professor Daniel Haehn</strong> for helping us build the foundation for this research and advising us to integrate the latest technology into our paper.</li>
+  <li><strong>Kenichi Maeda</strong> and <strong>Mahsa Geshvadi</strong> for their assistance in writing and reviewing multiple scripts and building up our paper together.</li>
+</ul>
+
+<p>
+  We have also learned a great deal from this project, spanning
+  <em> #artificalintelligent #programming, #datavisualization, #imageprocessing, #machinelearning, and #computergraphics #machinepsychology</em>,
+  and applied these insights to our study.
+</p>
+
+<p>
+  Most importantly, we all contributed to this <strong>CS460 - Computer Graphics</strong> project and our lab's group (Machine Psychology) at the University of Massachusetts Boston.
+  Here's the link to the course website: 
+  <a href="https://CS460.org" target="_blank">CS460.org</a> and our lab's group 
+  <a href="https://mpsych.org/" target="_blank">Machine Psychology</a>.
+</p>
+
+
+
+  <h2 style="color: gray;"> Citation</h2>
+
+  <pre>
+    @article {nguyen2025evaluating,
+      title={Evaluating 'Graphical Perception' with Multimodal LLMs},
+    author={Nguyen, Rami Huu and Maeda, Kenichi and Geshvadi, Mahsa and Haehn, Daniel},
+      abstract={Multimodal Large Language Models (MLLMs) have remarkably progressed in analyzing and understanding images. Despite these advancements, accurately regressing values in charts remains an underexplored area for MLLMs. For visualization, how do MLLMs perform when applied to graphical perception tasks? Our paper investigates this question by reproducing Cleveland and McGill's seminal 1984 experiment and comparing it against human task performance. Our study primarily evaluates fine-tuned and pretrained models and zero-shot prompting to determine if they closely match human graphical perception. Our findings highlight that MLLMs outperform human task performance in some cases but not in others. We highlight the results of all experiments to foster an understanding of where MLLMs succeed and fail when applied to data visualization.},
+      journal={IEEE Pacific Visualization (PacificVis)},
+      year={2025},
+      code={https://github.com/raminguyen/LLMP2},
+      data={https://github.com/raminguyen/LLMP2},
+      supplemental={https://mpsych.org/papers/nguyen2025_supplemental.pdf},
+      shortvenue={PacificVis 2025}
+  }
+  </pre>
+
+  <h2 style="color: gray;"> With the tremedous support of </h2>
+
+  <p style="text-align: center; font-size: 1.2rem; margin-top: 50px; color: gray;">
+
+  <div style="display: flex; justify-content: center; gap: 40px; align-items: center; margin-top: 20px;">
+  
+    <a href="https://mpsych.org/" target="_blank">
+      <img src="images/machinepsychology.svg" alt="Machine Psychology" style="width: 150px; height: auto; border: none; box-shadow: none;">
+    </a>
+  
+    <a href="https://www.aicore.ai" target="_blank">
+      <img src="images/aicore.png" alt="AI Core" style="width: 150px; height: auto; border: none; box-shadow: none;">
+    </a>
+  
+    <a href="https://www.umb.edu" target="_blank">
+      <img src="images/umblogo.png" alt="UMass Boston" style="width: 150px; height: auto; border: none; box-shadow: none;">
+    </a>
+  
+  </div>
+      
+
+</body>
+</html>
